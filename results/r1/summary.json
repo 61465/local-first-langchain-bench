@@ -1,0 +1,41 @@
+{
+  "baseline-langchain": {
+    "n": 10,
+    "correct_count": 10,
+    "partial_count": 10,
+    "accuracy_exact": 1.0,
+    "accuracy_partial": 1.0,
+    "total_tokens_in": 1080,
+    "total_tokens_out": 729,
+    "total_usd": 0.001213,
+    "total_wall_seconds": 19.532,
+    "avg_wall_seconds": 1.953,
+    "total_retries": 0
+  },
+  "nexus-v09": {
+    "n": 10,
+    "correct_count": 9,
+    "partial_count": 10,
+    "accuracy_exact": 0.9,
+    "accuracy_partial": 1.0,
+    "total_tokens_in": 1176,
+    "total_tokens_out": 726,
+    "total_usd": 0.001268,
+    "total_wall_seconds": 15.5,
+    "avg_wall_seconds": 1.55,
+    "total_retries": 1
+  },
+  "nexus-v09-compressor": {
+    "n": 10,
+    "correct_count": 9,
+    "partial_count": 10,
+    "accuracy_exact": 0.9,
+    "accuracy_partial": 1.0,
+    "total_tokens_in": 1176,
+    "total_tokens_out": 730,
+    "total_usd": 0.001271,
+    "total_wall_seconds": 35.11,
+    "avg_wall_seconds": 3.511,
+    "total_retries": 1
+  }
+}

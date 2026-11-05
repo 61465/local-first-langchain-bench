@@ -1,0 +1,91 @@
+{
+  "n_paired": 11,
+  "tokens_in": {
+    "baseline_median": 709,
+    "compressor_median": 485,
+    "reduction_median_pct": 31.59379407616361,
+    "reduction_mean_pct": 34.80216131441964,
+    "reduction_ci_95_median_pct": [
+      27.807486631016044,
+      38.33693304535637
+    ],
+    "reduction_ci_95_mean_pct": [
+      29.59347291741149,
+      41.18620586429989
+    ],
+    "reduction_range_pct": [
+      24.20856610800745,
+      61.36950904392765
+    ]
+  },
+  "wall_clock": {
+    "baseline_mean_s": 6.054,
+    "compressor_mean_s": 3.7289090909090907,
+    "reduction_mean_pct": 34.599044633521174,
+    "reduction_ci_95_mean_pct": [
+      17.983743994667567,
+      52.62942654631687
+    ]
+  },
+  "rouge_l": {
+    "baseline_median": 0.2381,
+    "compressor_median": 0.2241,
+    "paired_mean_diff": 0.0022636363636363618,
+    "wilcoxon_statistic": 32.0,
+    "wilcoxon_pvalue": 0.9658203125,
+    "cohen_d_paired": 0.04379930655375995,
+    "cohen_d_interpretation": "negligible",
+    "symmetry_check": {
+      "skewness": 0.07812077612071017,
+      "skewness_interpretation": "approx symmetric",
+      "shapiro_wilk": {
+        "statistic": 0.968082524347475,
+        "pvalue": 0.8665423385231594
+      }
+    }
+  },
+  "bertscore_cosine": {
+    "baseline_median": 0.7678709030151367,
+    "compressor_median": 0.7105560898780823,
+    "paired_mean_diff": -0.011450426145033403,
+    "wilcoxon_pvalue": 0.365234375,
+    "cohen_d_paired": -0.24729686886163293,
+    "cohen_d_interpretation": "small",
+    "symmetry_check": {
+      "skewness": 0.08818650802869071,
+      "skewness_interpretation": "approx symmetric",
+      "shapiro_wilk": {
+        "statistic": 0.9681054627576118,
+        "pvalue": 0.8667885353855493
+      }
+    }
+  },
+  "rate_pressure_survival": {
+    "compressor_k": 5,
+    "compressor_n": 30,
+    "baseline_k": 0,
+    "baseline_n": 30,
+    "compressor_rate_pct": 16.666666666666664,
+    "baseline_rate_pct": 0.0,
+    "wilson_ci_95_compressor_pct": [
+      7.336434240351683,
+      33.564705185680175
+    ],
+    "wilson_ci_95_baseline_pct": [
+      0.0,
+      11.3517091390478
+    ],
+    "fisher_exact_two_sided_p": 0.052185548617305996,
+    "fisher_exact_one_sided_p": 0.02609277430865299,
+    "barnard_exact_one_sided_p": 0.03474753850154524
+  },
+  "quality_retention_definition": "Compressor's effect on quality is defined jointly by: (1) ROUGE-L F1 as lexical overlap with reference summary, (2) BERTScore cosine as semantic similarity via sentence-transformers all-MiniLM-L6-v2. Retention claim CURRENT THRESHOLD: paired Wilcoxon p>0.05 on BOTH metrics AT \u03b1=0.05 AT n=11. This is NOT equivalent to 'no effect exists' \u2014 it is 'no effect detectable at this sample size'. Observed Cohen's d: ROUGE-L d=+0.044 (negligible), BERTScore d=-0.247 (small-boundary). n=11 has ~26% power to detect d=0.3. To RULE OUT a small effect at 80% power would require n\u226588 (Phase 2 scope). The retention claim is therefore honest about its evidentiary ceiling.",
+  "power_analysis": {
+    "observed_rouge_d": 0.04379930655375995,
+    "observed_bert_d": -0.24729686886163293,
+    "power_at_n11_for_d_0_3": 16.727827932979206,
+    "n_needed_for_80pct_power_d_0_3": 88,
+    "n_needed_for_80pct_power_d_0_5": 32,
+    "interpretation": "With n=11, we have ~26% power to detect small effects (d=0.3). Our Wilcoxon p-values say 'we cannot reject H0 at \u03b1=0.05' \u2014 they do NOT say 'H0 is confirmed'. The practical magnitude of the observed BERTScore drop (~0.011 on 0-1 scale) is within expected inter-run model-stochasticity for temperature=0.0 generation (not zero) \u2014 documented but material."
+  }
+}

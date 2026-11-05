@@ -1,0 +1,26 @@
+{
+  "nexus-v09": {
+    "n_measurements": 7,
+    "rouge_l_mean": 0.1734,
+    "rouge_l_sem": 0.0177,
+    "rouge_l_95ci": [
+      0.1387,
+      0.2082
+    ],
+    "wall_mean_s": 24.58,
+    "wall_sem_s": 19.567,
+    "wall_95ci_s": [
+      -13.77,
+      62.931
+    ],
+    "wall_p50_s": 4.265,
+    "wall_p95_s": 16.984,
+    "avg_tokens_in": 713.3,
+    "avg_tokens_out": 266.4,
+    "total_tokens_in": 4993,
+    "total_tokens_out": 1865,
+    "total_usd": 0.004421,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  }
+}

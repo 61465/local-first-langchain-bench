@@ -1,0 +1,29 @@
+{
+  "n": 100,
+  "model": "openai/gpt-oss-20b",
+  "tokens_in": {
+    "baseline_median": 783.5,
+    "compressor_median": 505.0,
+    "reduction_median_pct": 36.61780525127646,
+    "reduction_mean_pct": 34.23710989726867,
+    "reduction_ci_95_median_pct": [
+      35.229398210897266,
+      38.87489504617968
+    ],
+    "reduction_ci_95_mean_pct": [
+      32.01405777746956,
+      36.29665064025275
+    ],
+    "ci_width_pts": 3.6454968352824135,
+    "wilcoxon_p": 1.780530729683873e-17,
+    "cohen_d": -1.8564550400961883,
+    "power_at_d_0_3_pct": 85.08384157958045
+  },
+  "wall_clock": {
+    "mean_reduction_pct": -25.080749340621743,
+    "ci_95_mean_pct": [
+      -42.833155535571784,
+      -8.630691126781327
+    ]
+  }
+}

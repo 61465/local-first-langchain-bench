@@ -1,0 +1,37 @@
+{
+  "dialogue": {
+    "n": 10,
+    "baseline_median_tokens": 245.0,
+    "compressor_median_tokens": 238.5,
+    "reduction_median_pct": 0.0,
+    "reduction_mean_pct": 6.935698022256941,
+    "reduction_ci_95_pct": [
+      0.0,
+      19.863013698630137
+    ],
+    "wall_reduction_mean_pct": -3.602684577549585,
+    "wilcoxon_pvalue": 0.25,
+    "cohen_d_tokens_in": -0.5950929960153921,
+    "unchanged_samples": 7
+  },
+  "rag_qa": {
+    "n": 10,
+    "baseline_median_tokens": 953.5,
+    "compressor_median_tokens": 518.5,
+    "reduction_median_pct": 45.62140740594086,
+    "reduction_mean_pct": 45.62214820699927,
+    "reduction_ci_95_pct": [
+      45.52601486563751,
+      45.78947368421053
+    ],
+    "wall_reduction_mean_pct": 6.5461684457915625,
+    "wilcoxon_pvalue": 0.001953125,
+    "cohen_d_tokens_in": 0.0,
+    "unchanged_samples": 0
+  },
+  "honest_framing": {
+    "dialogue": "n=10 short dialogues (median 490 chars). 7/10 under v2a's short-prompt safe-guard = pass-through. v2a is a news-tuned compressor; dialogue-tuned variant is Phase 2 scope.",
+    "rag_qa": "n=10 RAG queries over SAME 4281-char system prompt. The reduction is deterministic (same compression applied); 10 queries vary. Tight CI reflects determinism, NOT 10 independent samples. The reduction number (45.6%) is the single compression-ratio measurement on this system prompt.",
+    "aggregate_sample_size_across_phases": "R3 n=11 paired + R6 n=33 (3 models \u00d7 11) + R7 n=20 = 64 paired measurements; one compressor applied across all."
+  }
+}

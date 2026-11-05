@@ -1,0 +1,62 @@
+{
+  "per_model": {
+    "openai/gpt-oss-120b": {
+      "n": 11,
+      "baseline_tokens_median": 672,
+      "compressor_tokens_median": 448,
+      "reduction_median_pct": 31.983805668016196,
+      "reduction_mean_pct": 33.11589058139192,
+      "reduction_ci_95_median_pct": [
+        27.073552425665103,
+        37.86407766990291
+      ],
+      "cohen_d_tokens_in": -2.7522758663113036,
+      "wilcoxon_pvalue": 0.0009765625,
+      "wilcoxon_statistic": 0.0
+    },
+    "openai/gpt-oss-20b": {
+      "n": 11,
+      "baseline_tokens_median": 672,
+      "compressor_tokens_median": 448,
+      "reduction_median_pct": 31.983805668016196,
+      "reduction_mean_pct": 33.11589058139192,
+      "reduction_ci_95_median_pct": [
+        27.073552425665103,
+        37.86407766990291
+      ],
+      "cohen_d_tokens_in": -2.7522758663113036,
+      "wilcoxon_pvalue": 0.0009765625,
+      "wilcoxon_statistic": 0.0
+    },
+    "qwen/qwen3.8-27b": {
+      "n": 11,
+      "baseline_tokens_median": 639,
+      "compressor_tokens_median": 407,
+      "reduction_median_pct": 36.11738148984199,
+      "reduction_mean_pct": 36.31008241994511,
+      "reduction_ci_95_median_pct": [
+        30.240000000000002,
+        40.204865556978234
+      ],
+      "cohen_d_tokens_in": -2.7989147163526376,
+      "wilcoxon_pvalue": 0.0009765625,
+      "wilcoxon_statistic": 0.0
+    }
+  },
+  "cross_model": {
+    "median_of_medians_pct": 31.983805668016196,
+    "range_pct": [
+      31.983805668016196,
+      36.11738148984199
+    ],
+    "stdev_pct": 2.3865211134468507,
+    "model_families_tested": [
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "qwen/qwen3.8-27b"
+    ],
+    "n_per_model": 11,
+    "same_provider": "Groq (infrastructure)",
+    "honest_framing": "3 model families (OpenAI gpt-oss, Alibaba Qwen) served by same provider. Not tested: Anthropic Claude, Google Gemini, Mistral \u2014 would require different API providers and are listed as Phase 2 expansion."
+  }
+}

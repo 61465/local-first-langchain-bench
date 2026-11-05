@@ -1,0 +1,305 @@
+Loaded 100 R8 baseline articles
+Matched 100/100 articles from CNN/DM
+Resuming: 0 already processed
+
+--- 1/100 sid=f78024d2 article=3598ch hstc=1098ch (69.5%) ---
+  OK  tokens_in=324 wall=0.75s
+
+--- 2/100 sid=1514bbfb article=4001ch hstc=1641ch (59.0%) ---
+  OK  tokens_in=418 wall=0.64s
+
+--- 3/100 sid=75d3a5fe article=1194ch hstc=774ch (35.2%) ---
+  OK  tokens_in=249 wall=0.66s
+
+--- 4/100 sid=c30a8bde article=4837ch hstc=2405ch (50.3%) ---
+  OK  tokens_in=555 wall=1.08s
+
+--- 5/100 sid=255f6290 article=4010ch hstc=1735ch (56.7%) ---
+  OK  tokens_in=430 wall=0.97s
+
+--- 6/100 sid=de45d9d9 article=3359ch hstc=1454ch (56.7%) ---
+  OK  tokens_in=364 wall=0.69s
+
+--- 7/100 sid=eec44c85 article=5611ch hstc=2390ch (57.4%) ---
+  OK  tokens_in=558 wall=1.16s
+
+--- 8/100 sid=a316a0a9 article=4215ch hstc=1960ch (53.5%) ---
+  OK  tokens_in=475 wall=0.75s
+
+--- 9/100 sid=279b6767 article=2568ch hstc=1618ch (37.0%) ---
+  OK  tokens_in=412 wall=1.17s
+
+--- 10/100 sid=2025be23 article=5587ch hstc=2162ch (61.3%) ---
+  OK  tokens_in=534 wall=0.66s
+
+--- 11/100 sid=3a291f24 article=1328ch hstc=1102ch (17.0%) ---
+  OK  tokens_in=322 wall=1.23s
+
+--- 12/100 sid=8ee64154 article=5045ch hstc=2276ch (54.9%) ---
+  OK  tokens_in=569 wall=1.12s
+
+--- 13/100 sid=91435983 article=3045ch hstc=1442ch (52.6%) ---
+  OK  tokens_in=393 wall=1.20s
+
+--- 14/100 sid=6195595c article=2388ch hstc=1105ch (53.7%) ---
+  OK  tokens_in=322 wall=1.95s
+
+--- 15/100 sid=ab11d792 article=2027ch hstc=1392ch (31.3%) ---
+  OK  tokens_in=365 wall=0.98s
+
+--- 16/100 sid=1047ebfa article=5038ch hstc=2417ch (52.0%) ---
+  OK  tokens_in=636 wall=0.84s
+
+--- 17/100 sid=db92965c article=1710ch hstc=1366ch (20.1%) ---
+  OK  tokens_in=380 wall=1.50s
+
+--- 18/100 sid=36e476c4 article=1739ch hstc=1362ch (21.7%) ---
+  OK  tokens_in=395 wall=0.97s
+
+--- 19/100 sid=a5de1bb3 article=5626ch hstc=2658ch (52.8%) ---
+  OK  tokens_in=636 wall=2.25s
+
+--- 20/100 sid=3612c620 article=2758ch hstc=1288ch (53.3%) ---
+  OK  tokens_in=365 wall=2.23s
+
+--- 21/100 sid=c270aa81 article=1893ch hstc=1094ch (42.2%) ---
+  OK  tokens_in=339 wall=0.86s
+
+--- 22/100 sid=8186c902 article=562ch hstc=424ch (24.6%) ---
+  OK  tokens_in=177 wall=0.59s
+
+--- 23/100 sid=53a6fdea article=3310ch hstc=1825ch (44.9%) ---
+  OK  tokens_in=471 wall=1.09s
+
+--- 24/100 sid=879671e8 article=4227ch hstc=1949ch (53.9%) ---
+  OK  tokens_in=460 wall=0.56s
+
+--- 25/100 sid=bd20515f article=2212ch hstc=1212ch (45.2%) ---
+  OK  tokens_in=323 wall=0.94s
+
+--- 26/100 sid=6c33eb78 article=2987ch hstc=1244ch (58.4%) ---
+  OK  tokens_in=360 wall=0.88s
+
+--- 27/100 sid=2888d0cb article=2472ch hstc=1369ch (44.6%) ---
+  OK  tokens_in=379 wall=1.56s
+
+--- 28/100 sid=edfeea69 article=3514ch hstc=1606ch (54.3%) ---
+  OK  tokens_in=441 wall=1.03s
+
+--- 29/100 sid=47b84645 article=2183ch hstc=962ch (55.9%) ---
+  OK  tokens_in=263 wall=1.17s
+
+--- 30/100 sid=a305398b article=2020ch hstc=1160ch (42.6%) ---
+  OK  tokens_in=330 wall=0.84s
+
+--- 31/100 sid=06a4f261 article=1384ch hstc=727ch (47.5%) ---
+  OK  tokens_in=252 wall=0.72s
+
+--- 32/100 sid=518b418c article=2184ch hstc=1124ch (48.5%) ---
+  OK  tokens_in=292 wall=0.81s
+
+--- 33/100 sid=65746358 article=3626ch hstc=1490ch (58.9%) ---
+  OK  tokens_in=382 wall=1.30s
+
+--- 34/100 sid=66c4036e article=1661ch hstc=1079ch (35.0%) ---
+  OK  tokens_in=309 wall=0.78s
+
+--- 35/100 sid=c98896ad article=1429ch hstc=829ch (42.0%) ---
+  OK  tokens_in=269 wall=3.33s
+
+--- 36/100 sid=fbc2e057 article=5286ch hstc=2360ch (55.4%) ---
+  OK  tokens_in=586 wall=3.56s
+
+--- 37/100 sid=b0538ce0 article=2684ch hstc=970ch (63.9%) ---
+  OK  tokens_in=297 wall=0.67s
+
+--- 38/100 sid=63b62b2d article=3049ch hstc=1440ch (52.8%) ---
+  OK  tokens_in=417 wall=0.81s
+
+--- 39/100 sid=f8e569d2 article=3978ch hstc=1721ch (56.7%) ---
+  OK  tokens_in=435 wall=0.70s
+
+--- 40/100 sid=867f5ddb article=1307ch hstc=683ch (47.7%) ---
+  OK  tokens_in=230 wall=0.75s
+
+--- 41/100 sid=e4e79f64 article=3783ch hstc=1651ch (56.4%) ---
+  OK  tokens_in=409 wall=1.62s
+
+--- 42/100 sid=1b88d77d article=3653ch hstc=1657ch (54.6%) ---
+  OK  tokens_in=429 wall=1.19s
+
+--- 43/100 sid=1c4ba950 article=1977ch hstc=1001ch (49.4%) ---
+  OK  tokens_in=292 wall=2.31s
+
+--- 44/100 sid=f9c253d0 article=1956ch hstc=1138ch (41.8%) ---
+  OK  tokens_in=349 wall=2.95s
+
+--- 45/100 sid=c9b1b098 article=2925ch hstc=1394ch (52.3%) ---
+  OK  tokens_in=393 wall=1.88s
+
+--- 46/100 sid=2f3a3e30 article=5162ch hstc=2643ch (48.8%) ---
+  OK  tokens_in=592 wall=1.00s
+
+--- 47/100 sid=17cc85ec article=4261ch hstc=1416ch (66.8%) ---
+  OK  tokens_in=369 wall=0.88s
+
+--- 48/100 sid=a31e2a3c article=1911ch hstc=1127ch (41.0%) ---
+  OK  tokens_in=324 wall=0.77s
+
+--- 49/100 sid=8b32b0d8 article=2683ch hstc=1489ch (44.5%) ---
+  FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+
+--- 50/100 sid=bc92e8db article=5997ch hstc=2597ch (56.7%) ---
+  FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+
+--- 51/100 sid=128f4086 article=3630ch hstc=1653ch (54.5%) ---
+  FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+
+--- 52/100 sid=82c6b685 article=2639ch hstc=1304ch (50.6%) ---
+  OK  tokens_in=364 wall=2.20s
+
+--- 53/100 sid=c5bedadb article=2512ch hstc=993ch (60.5%) ---
+  OK  tokens_in=306 wall=1.11s
+
+--- 54/100 sid=3f54c155 article=5393ch hstc=1896ch (64.8%) ---
+  OK  tokens_in=484 wall=0.77s
+
+--- 55/100 sid=7638ccd8 article=4973ch hstc=1802ch (63.8%) ---
+  OK  tokens_in=445 wall=0.59s
+
+--- 56/100 sid=a8d675b7 article=4328ch hstc=1942ch (55.1%) ---
+  OK  tokens_in=460 wall=8.16s
+
+--- 57/100 sid=62d6e638 article=2855ch hstc=1539ch (46.1%) ---
+  OK  tokens_in=432 wall=1.50s
+
+--- 58/100 sid=5fba9d52 article=4877ch hstc=2229ch (54.3%) ---
+  OK  tokens_in=557 wall=1.36s
+
+--- 59/100 sid=643f4063 article=2297ch hstc=1094ch (52.4%) ---
+  OK  tokens_in=306 wall=0.97s
+
+--- 60/100 sid=97856d25 article=2207ch hstc=1144ch (48.2%) ---
+  OK  tokens_in=313 wall=1.02s
+
+--- 61/100 sid=6d6fbba1 article=4981ch hstc=2051ch (58.8%) ---
+  OK  tokens_in=502 wall=7.86s
+
+--- 62/100 sid=41126c15 article=4032ch hstc=1837ch (54.4%) ---
+  OK  tokens_in=460 wall=1.34s
+
+--- 63/100 sid=d7349717 article=4331ch hstc=2382ch (45.0%) ---
+  OK  tokens_in=538 wall=0.92s
+
+--- 64/100 sid=34b8521a article=1693ch hstc=648ch (61.7%) ---
+  OK  tokens_in=226 wall=0.70s
+
+--- 65/100 sid=4ac39a81 article=2730ch hstc=1051ch (61.5%) ---
+  OK  tokens_in=313 wall=0.84s
+
+--- 66/100 sid=71f16c71 article=2881ch hstc=1526ch (47.0%) ---
+  OK  tokens_in=387 wall=0.52s
+
+--- 67/100 sid=5892dfb6 article=1814ch hstc=1017ch (43.9%) ---
+  OK  tokens_in=292 wall=1.05s
+
+--- 68/100 sid=e4f34f01 article=5904ch hstc=2624ch (55.6%) ---
+  OK  tokens_in=619 wall=0.72s
+
+--- 69/100 sid=84947a18 article=4420ch hstc=2196ch (50.3%) ---
+  OK  tokens_in=569 wall=0.61s
+
+--- 70/100 sid=ec49dc2a article=5237ch hstc=2370ch (54.7%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 71/100 sid=69f8ad5a article=3106ch hstc=1493ch (51.9%) ---
+  OK  tokens_in=380 wall=1.44s
+
+--- 72/100 sid=a6966f0e article=5972ch hstc=2408ch (59.7%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 73/100 sid=c8f6b622 article=2832ch hstc=1319ch (53.4%) ---
+  OK  tokens_in=363 wall=0.72s
+
+--- 74/100 sid=6d5b7239 article=4962ch hstc=2253ch (54.6%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 75/100 sid=10907d89 article=4663ch hstc=2159ch (53.7%) ---
+  OK  tokens_in=537 wall=8.73s
+
+--- 76/100 sid=6b488d84 article=5061ch hstc=1942ch (61.6%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 77/100 sid=f65e29ec article=5907ch hstc=2250ch (61.9%) ---
+  OK  tokens_in=548 wall=0.67s
+
+--- 78/100 sid=ce1e44b1 article=2523ch hstc=1420ch (43.7%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 79/100 sid=7e4e7fb2 article=2541ch hstc=1325ch (47.9%) ---
+  OK  tokens_in=350 wall=0.80s
+
+--- 80/100 sid=bdc472f1 article=3133ch hstc=1275ch (59.3%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 81/100 sid=d5e09175 article=4993ch hstc=2302ch (53.9%) ---
+  OK  tokens_in=565 wall=0.59s
+
+--- 82/100 sid=ea7333f6 article=4958ch hstc=2139ch (56.9%) ---
+  OK  tokens_in=487 wall=0.72s
+
+--- 83/100 sid=3e4d4b1a article=4661ch hstc=1868ch (59.9%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 84/100 sid=4487bcbd article=1758ch hstc=962ch (45.3%) ---
+  OK  tokens_in=298 wall=2.03s
+
+--- 85/100 sid=e3e17921 article=1769ch hstc=880ch (50.3%) ---
+  OK  tokens_in=280 wall=1.05s
+
+--- 86/100 sid=399c9461 article=2400ch hstc=840ch (65.0%) ---
+  OK  tokens_in=257 wall=1.14s
+
+--- 87/100 sid=747a2b8b article=3617ch hstc=1492ch (58.8%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 88/100 sid=5ebe115c article=2931ch hstc=1215ch (58.5%) ---
+  OK  tokens_in=332 wall=0.98s
+
+--- 89/100 sid=3b26f417 article=3134ch hstc=1411ch (55.0%) ---
+  OK  tokens_in=386 wall=0.58s
+
+--- 90/100 sid=7d02986e article=4618ch hstc=1922ch (58.4%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 91/100 sid=34cbdd1c article=3548ch hstc=1562ch (56.0%) ---
+  OK  tokens_in=412 wall=1.23s
+
+--- 92/100 sid=cfed2378 article=4897ch hstc=1794ch (63.4%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 93/100 sid=9f20a500 article=2192ch hstc=1247ch (43.1%) ---
+  OK  tokens_in=357 wall=0.64s
+
+--- 94/100 sid=aca7b9d4 article=4249ch hstc=1876ch (55.8%) ---
+  OK  tokens_in=469 wall=0.74s
+
+--- 95/100 sid=5bbfc8dc article=3873ch hstc=1601ch (58.7%) ---
+  FAIL HTTP Error 429: Too Many Requests {"error":{"message":"Rate limit reac
+
+--- 96/100 sid=dd7c9bce article=2936ch hstc=1574ch (46.4%) ---
+  OK  tokens_in=406 wall=0.95s
+
+--- 97/100 sid=14559296 article=1983ch hstc=958ch (51.7%) ---
+  OK  tokens_in=276 wall=2.73s
+
+--- 98/100 sid=07aed689 article=3572ch hstc=1610ch (54.9%) ---
+  OK  tokens_in=440 wall=1.69s
+
+--- 99/100 sid=ec899ca7 article=3414ch hstc=1789ch (47.6%) ---
+  OK  tokens_in=452 wall=1.39s
+
+--- 100/100 sid=173e140b article=4342ch hstc=1896ch (56.3%) ---
+  OK  tokens_in=431 wall=1.02s
+
+✓ R11 complete. Total HSTC rows: 100

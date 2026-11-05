@@ -1,0 +1,26 @@
+{
+  "baseline-langchain": {
+    "n_measurements": 1,
+    "rouge_l_mean": 0.2381,
+    "rouge_l_sem": 0,
+    "rouge_l_95ci": [
+      0.2381,
+      0.2381
+    ],
+    "wall_mean_s": 3.25,
+    "wall_sem_s": 0,
+    "wall_95ci_s": [
+      3.25,
+      3.25
+    ],
+    "wall_p50_s": 3.25,
+    "wall_p95_s": 3.25,
+    "avg_tokens_in": 561,
+    "avg_tokens_out": 249,
+    "total_tokens_in": 561,
+    "total_tokens_out": 249,
+    "total_usd": 0.000528,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  }
+}

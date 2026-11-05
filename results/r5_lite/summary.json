@@ -1,0 +1,26 @@
+{
+  "nexus-v09-compressor-v2": {
+    "n_measurements": 6,
+    "rouge_l_mean": 0.2434,
+    "rouge_l_sem": 0.0328,
+    "rouge_l_95ci": [
+      0.1792,
+      0.3077
+    ],
+    "wall_mean_s": 59.992,
+    "wall_sem_s": 14.049,
+    "wall_95ci_s": [
+      32.455,
+      87.529
+    ],
+    "wall_p50_s": 68.758,
+    "wall_p95_s": 83.5,
+    "avg_tokens_in": 477.3,
+    "avg_tokens_out": 234.5,
+    "total_tokens_in": 2864,
+    "total_tokens_out": 1407,
+    "total_usd": 0.002801,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  }
+}

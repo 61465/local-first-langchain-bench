@@ -1,0 +1,89 @@
+D:\project\local-first-langchain-bench\src\r7_multiworkload.py:147: SyntaxWarning: invalid escape sequence '\c'
+  For high-value order queries, prefer WHERE total > 1000 AND created_at > NOW() - INTERVAL '30 days'. Index on (created_at DESC, total) is required for performance; without it the query becomes a sequential scan. CSV export via COPY TO STDOUT WITH CSV HEADER is fastest; psql \copy is the client-side equivalent for non-superusers. Always use parameterized queries to prevent SQL injection.
+
+=== Workload A: DIALOGUE (DialogSum MIT, n=10) ===
+
+--- A1/10 id=test_436_2 dlg=505ch comp=505ch ---
+  baseline   OK  tokens_in=247 wall=0.48s
+  compressor OK  tokens_in=247 wall=0.42s
+
+--- A2/10 id=test_76_1 dlg=783ch comp=574ch ---
+  baseline   OK  tokens_in=292 wall=0.69s
+  compressor OK  tokens_in=234 wall=0.66s
+
+--- A3/10 id=test_17_1 dlg=277ch comp=277ch ---
+  baseline   OK  tokens_in=170 wall=0.73s
+  compressor OK  tokens_in=170 wall=0.81s
+
+--- A4/10 id=test_187_3 dlg=413ch comp=413ch ---
+  baseline   OK  tokens_in=200 wall=0.72s
+  compressor OK  tokens_in=200 wall=0.62s
+
+--- A5/10 id=test_167_1 dlg=1035ch comp=626ch ---
+  baseline   OK  tokens_in=367 wall=0.62s
+  compressor OK  tokens_in=264 wall=0.70s
+
+--- A6/10 id=test_152_2 dlg=565ch comp=565ch ---
+  baseline   OK  tokens_in=243 wall=0.42s
+  compressor OK  tokens_in=243 wall=0.61s
+
+--- A7/10 id=test_95_1 dlg=976ch comp=703ch ---
+  baseline   OK  tokens_in=322 wall=0.67s
+  compressor OK  tokens_in=253 wall=0.69s
+
+--- A8/10 id=test_69_3 dlg=482ch comp=482ch ---
+  baseline   OK  tokens_in=218 wall=0.70s
+  compressor OK  tokens_in=218 wall=0.62s
+
+--- A9/10 id=test_461_3 dlg=415ch comp=415ch ---
+  baseline   OK  tokens_in=199 wall=0.58s
+  compressor OK  tokens_in=199 wall=0.61s
+
+--- A10/10 id=test_372_1 dlg=811ch comp=811ch ---
+  baseline   OK  tokens_in=288 wall=0.61s
+  compressor OK  tokens_in=288 wall=0.62s
+
+=== Workload B: RAG LONG-CONTEXT QA (synthetic, n=10) ===
+System prompt: 4281ch → compressed 2222ch
+
+--- B1/10 user='What are the main improvements in PostgreSQL 16's query plan...' ---
+  baseline   OK  tokens_in=955 wall=1.61s
+  compressor OK  tokens_in=520 wall=1.52s
+
+--- B2/10 user='Summarize OIDC refresh token rotation and explain why localS...' ---
+  baseline   OK  tokens_in=954 wall=1.47s
+  compressor OK  tokens_in=519 wall=1.33s
+
+--- B3/10 user='Why is a raw signup count misleading, and what secondary met...' ---
+  baseline   OK  tokens_in=950 wall=1.25s
+  compressor OK  tokens_in=515 wall=0.97s
+
+--- B4/10 user='Walk me through the gates that CI enforces before a deploy c...' ---
+  baseline   OK  tokens_in=948 wall=1.56s
+  compressor OK  tokens_in=513 wall=1.38s
+
+--- B5/10 user='Who are the top three AI frameworks in 2026, and what is the...' ---
+  baseline   OK  tokens_in=954 wall=0.95s
+  compressor OK  tokens_in=519 wall=0.78s
+
+--- B6/10 user='List the three effects of setting debug=true in app.yaml, an...' ---
+  baseline   OK  tokens_in=953 wall=1.09s
+  compressor OK  tokens_in=518 wall=1.67s
+
+--- B7/10 user='What index is required for the high-value order query, and w...' ---
+  baseline   OK  tokens_in=949 wall=1.12s
+  compressor OK  tokens_in=514 wall=1.02s
+
+--- B8/10 user='Give me the three primary RAG evaluation metrics and explain...' ---
+  baseline   OK  tokens_in=953 wall=1.83s
+  compressor OK  tokens_in=518 wall=1.61s
+
+--- B9/10 user='Compare OIDC refresh token guidance to the deploy workflow —...' ---
+  baseline   OK  tokens_in=957 wall=2.14s
+  compressor OK  tokens_in=522 wall=1.55s
+
+--- B10/10 user='A user asks why their PostgreSQL 16 logical replication from...' ---
+  baseline   OK  tokens_in=962 wall=1.56s
+  compressor OK  tokens_in=527 wall=1.55s
+
+✓ Wrote 40 rows to D:\project\local-first-langchain-bench\results\r7\rows.json

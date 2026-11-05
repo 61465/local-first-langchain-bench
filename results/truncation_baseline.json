@@ -1,0 +1,19 @@
+{
+  "n": 11,
+  "baseline_median_tokens": 592,
+  "methods": {
+    "truncation_485": {
+      "median_tokens": 485,
+      "median_reduction_pct": 18.074324324324326
+    },
+    "v2a": {
+      "median_tokens": 360,
+      "median_reduction_pct": 39.189189189189186
+    },
+    "hstc": {
+      "median_tokens": 284,
+      "median_reduction_pct": 51.520270270270274
+    }
+  },
+  "interpretation": "Truncation and extractive compression can target similar reduction %, but truncation unconditionally loses article tail content. HSTC preserves high-information sentences distributed across the article, trading some stopword content for structural coverage."
+}

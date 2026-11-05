@@ -1,0 +1,15 @@
+# Production path (compressor only) — stdlib only, zero runtime deps.
+# No install needed for src/compressor_hstc.py + src/runner_r3.py::extractive_compress.
+
+# Benchmark + analysis path (pinned for reproducibility)
+groq==0.23.0
+datasets==4.2.0
+tiktoken==0.8.0
+scipy==1.14.1
+sentence-transformers==3.3.1
+rouge-score==0.1.2  # NEXUS v5.3 fix #10: scorer pinning for reproducibility
+
+# Optional
+llmlingua==0.2.2  # for R9 head-to-head (not required for primary results)
+transformers==4.46.3  # for EEIC (Component E negative result)
+torch>=2.5  # for EEIC

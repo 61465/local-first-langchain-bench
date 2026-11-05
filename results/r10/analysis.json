@@ -1,0 +1,32 @@
+{
+  "n_paired": 11,
+  "tokens_in": {
+    "baseline_median": 672,
+    "v2a_median": 448,
+    "hstc_median": 380,
+    "v2a_reduction_median_pct": 31.983805668016196,
+    "hstc_reduction_median_pct": 41.902834008097166,
+    "hstc_reduction_mean_pct": 45.00667180258399,
+    "hstc_reduction_ci_95_median_pct": [
+      0.39436619718309857,
+      0.5304449648711944
+    ],
+    "hstc_extra_vs_v2a_median_pct": 16.95278969957082,
+    "wilcoxon_hstc_vs_v2a_p": 0.0009765625,
+    "cohen_d_hstc_vs_v2a": -2.4540172739512105
+  },
+  "rouge_l_quality": {
+    "baseline_median": 0.17582417582417584,
+    "v2a_median": 0.15873015873015872,
+    "hstc_median": 0.15894039735099338,
+    "wilcoxon_baseline_vs_hstc_p": 0.9658203125,
+    "cohen_d_baseline_vs_hstc": -0.06362298356916873,
+    "wilcoxon_v2a_vs_hstc_p": 0.365234375,
+    "cohen_d_v2a_vs_hstc": -0.3281978339016105
+  },
+  "wall_clock_mean_s": {
+    "baseline": 1.2046363635877655,
+    "v2a": 1.4488181818742305,
+    "hstc": 1.2343636363617738
+  }
+}

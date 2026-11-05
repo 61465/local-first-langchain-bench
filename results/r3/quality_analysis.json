@@ -1,0 +1,21 @@
+{
+  "n": 11,
+  "rouge_wilcoxon": {
+    "statistic": 32.0,
+    "pvalue": 0.9658203125,
+    "mean_delta": 0.0022636363636363618,
+    "median_delta": 0.003700000000000009,
+    "interpretation": "NOT significant (p=0.9658). Observed delta 0.0037 within noise."
+  },
+  "bertscore_wilcoxon": {
+    "statistic": 22.0,
+    "pvalue": 0.365234375,
+    "mean_delta": -0.011450426145033403,
+    "median_delta": -0.01922142505645752,
+    "interpretation": "NOT significant (p=0.3652). Observed delta -0.0192 within noise."
+  },
+  "baseline_rouge_median": 0.2381,
+  "comp_rouge_median": 0.2241,
+  "baseline_bert_median": 0.7678709030151367,
+  "comp_bert_median": 0.7105560898780823
+}

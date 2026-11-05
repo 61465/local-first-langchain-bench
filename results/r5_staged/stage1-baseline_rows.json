@@ -1,0 +1,400 @@
+[
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "ebd2dd309bbe226bd2a6af82cc2829256eeb0fe3",
+    "trial": 0,
+    "article_len_chars": 3848,
+    "compressed_len_chars": 3848,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 56.61,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Brady cited 'prior family commitments' in bowing out of meeting with Obama .\nHas been to the White House to meet President George W. Bush for previous Super Bowl wins .",
+    "sha256_input": "5d7fdbdbf513c7e6fa85bffca61ff17edf4a77efe98b1513ff386337c15323a3",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "66e0218045ebd3972b831324f1b59a6eb7b71b15",
+    "trial": 0,
+    "article_len_chars": 2129,
+    "compressed_len_chars": 2129,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 51.156,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Reports emerged on social media  suggesting Mike Ashley was now the official owner of the Light Blues trademarks .\nRangers have promised to investigate the claims .\nAshley was given security over the icons and logos as part of the \u00a35m loan .",
+    "sha256_input": "de6df5563ed69be642be8f2ea2ad9dcb305e11d9f6166b2ec23d14d30c0baa27",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "9dd47572c19820a82c1ec52db92a801c10b5b93c",
+    "trial": 0,
+    "article_len_chars": 5002,
+    "compressed_len_chars": 5002,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 51.469,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "In his final known video, Adam Gadahn called for governments of Pakistan and Saudi Arabia to be overthrown .\nHe was raised in California and said he was of Jewish ancestry .\nHe converted to Islam in 1995, left U.S. in 1998 and joined al Qaeda, becoming a spokesman .",
+    "sha256_input": "c00c3dc89081500f75190460de2bd139c244fe3c966f605b9505c5ce48bfd5b1",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "8f1ee28a99da5582e5fff500c2e72b81b302a62b",
+    "trial": 0,
+    "article_len_chars": 1916,
+    "compressed_len_chars": 1916,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 131.078,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "John Barnes appeared as a guest on Sky's A League Of Their Own show .\nThe 51-year-old rapped 1979 classic Rapper's Delight\u00a0as part of a sketch .\nBarnes' ex-Liverpool team-mate Jamie Redknapp joins in halfway through .\nBarnes featured on Anfield Rap and World in Motion in the past .",
+    "sha256_input": "5399cee9fdbeb99325138dd675d6b330bde438ed81bc954dd624c37d26223f69",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "6113e9d4732c98760229df50773df417b3f4f540",
+    "trial": 0,
+    "article_len_chars": 2616,
+    "compressed_len_chars": 2616,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.687,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "John Higgins beats Robert Milkins 10-5 to reach second round .\nHiggins says he would love to challenge for World title again .\nBut the 39-year-old admits there are many more favoured players .\nGraeme Dott sees off Ricky Walden 10-8 .",
+    "sha256_input": "9e91294dd7a4ed984b56833f6ac90eb25c2a78aae745cd974c89cf77698d5b5c",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "432642e19523c71e986985b0a1bb82f6baa9dc4f",
+    "trial": 0,
+    "article_len_chars": 2559,
+    "compressed_len_chars": 2559,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.157,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Arsenal face Aston Villa in the FA Cup final at Wembley on May 30 .\nTim Sherwood's side won the toss to decide which kit they'll wear .\nVilla chose their claret and blue home strip for the FA Cup showdown .\nArsenal will play in their yellow and blue away kit .\nThe Gunners have won three of the five finals played in the kit .",
+    "sha256_input": "e603a37405b4416ef5e83aef9c623e2116fc77095103eafa2065ca7a2932b383",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "15fffd5f6e0249a50b8ff64afa785a56e3cd6329",
+    "trial": 0,
+    "article_len_chars": 2804,
+    "compressed_len_chars": 2804,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.485,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Coutinho hit the only goal of the game as Liverpool beat Blackburn .\nThey will meet Aston Villa in the semi-finals a week on Sunday .\nLiverpool skipper Henderson had not slept the night before the game as his wife gave birth to his second daughter .\nBoss Brendan Rodgers revealed Henderson had no thoughts about missing the match .\n'He said to me, \"Boss, as soon as the baby's out, I'll be coming back\",' Rodgers explained .",
+    "sha256_input": "ea94d8aa19764afbc191d30f0225484a1576aa8927b7dd7ae8b944f07b178924",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "a4f3403c0c05589f939d0f4ddb138e8e2c5d288e",
+    "trial": 0,
+    "article_len_chars": 1762,
+    "compressed_len_chars": 1762,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.859,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Members of 30 rock band members merged into one face each .\nBeatles look like Paul McCartney, Nirvana look like Kurt Cobain .\nU2, Rolling Stones and Green Day are a bizarre blend .",
+    "sha256_input": "95e7afd1d0a4777a76d6e3de35f8c6c10c036bc8a99a876453cb5788cb1eedc9",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "bc526b7c50b3b816751a6a692cdb7324d980a576",
+    "trial": 0,
+    "article_len_chars": 4916,
+    "compressed_len_chars": 4916,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.859,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Mother-of-one Tayler Chaice Buzbee called Aspen Dental with toothache .\nShe was told only available appointment at the facility was in 20 minutes .\nHad no time to find babysitter for baby son, Attley, so brought him along .\nStarted breastfeeding the nine-month-old in chair when he created a fuss .\nBut soon after, female employee 'took him out of her arms without asking'\nWoman 'placed him in his stroller, saying breastfeeding was not allowed'\n'I was humiliated, crying, and I felt embarrassed to be there,' said Tayler .\nAspen Dental has since apologized to Tayler and launched investigation .",
+    "sha256_input": "1898cfbc5af1024b4d88762005c269a09ce450e4a419070ab326d61ac50f9d96",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "ca5cf6768d5700c8e944d7ec773d2116075d9003",
+    "trial": 0,
+    "article_len_chars": 3079,
+    "compressed_len_chars": 3079,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 121.782,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Heart-broken Tony Tancock, 56, has won prizes for specially-bred guinea pigs .\nA thief stole a dozen of his best from his home in Devon and left eight behind .\nSays only an expert could have targetted them and left ordinary ones behind .\n'They knew exactly what they were looking for,' a devastated Tancock claimed .",
+    "sha256_input": "2be4d43d7468957250e038c32fece663f7af144a11adb38b98dd139264a16e8c",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "ebd2dd309bbe226bd2a6af82cc2829256eeb0fe3",
+    "trial": 1,
+    "article_len_chars": 3848,
+    "compressed_len_chars": 3848,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.437,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Brady cited 'prior family commitments' in bowing out of meeting with Obama .\nHas been to the White House to meet President George W. Bush for previous Super Bowl wins .",
+    "sha256_input": "5d7fdbdbf513c7e6fa85bffca61ff17edf4a77efe98b1513ff386337c15323a3",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "66e0218045ebd3972b831324f1b59a6eb7b71b15",
+    "trial": 1,
+    "article_len_chars": 2129,
+    "compressed_len_chars": 2129,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 51.047,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Reports emerged on social media  suggesting Mike Ashley was now the official owner of the Light Blues trademarks .\nRangers have promised to investigate the claims .\nAshley was given security over the icons and logos as part of the \u00a35m loan .",
+    "sha256_input": "de6df5563ed69be642be8f2ea2ad9dcb305e11d9f6166b2ec23d14d30c0baa27",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "9dd47572c19820a82c1ec52db92a801c10b5b93c",
+    "trial": 1,
+    "article_len_chars": 5002,
+    "compressed_len_chars": 5002,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.656,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "In his final known video, Adam Gadahn called for governments of Pakistan and Saudi Arabia to be overthrown .\nHe was raised in California and said he was of Jewish ancestry .\nHe converted to Islam in 1995, left U.S. in 1998 and joined al Qaeda, becoming a spokesman .",
+    "sha256_input": "c00c3dc89081500f75190460de2bd139c244fe3c966f605b9505c5ce48bfd5b1",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "8f1ee28a99da5582e5fff500c2e72b81b302a62b",
+    "trial": 1,
+    "article_len_chars": 1916,
+    "compressed_len_chars": 1916,
+    "tokens_in": 561,
+    "tokens_out": 249,
+    "tokens_billed_usd": 0.000528,
+    "wall_clock_seconds": 3.25,
+    "retry_count": 0,
+    "rouge_l_f1": 0.2381,
+    "summary": "John Barnes and Jamie\u202fRedknapp teamed up to perform a rendition of the Sugarhill Gang\u2019s \u201cRapper\u2019s Delight\u201d in a spoof \u201cBritain\u2019s Got Sporting Talent\u201d sketch for Sky\u2019s upcoming series\u202fA\u202fLeague\u202fOf\u202fTheir\u202fOwn. The act featured Barnes in a hoodie, hat and sunglasses with backing dancers, and Redknapp joining him midway to share the mic. Their performance entertained the audience and highlighted the pair\u2019s unexpected rap abilities.",
+    "reference": "John Barnes appeared as a guest on Sky's A League Of Their Own show .\nThe 51-year-old rapped 1979 classic Rapper's Delight\u00a0as part of a sketch .\nBarnes' ex-Liverpool team-mate Jamie Redknapp joins in halfway through .\nBarnes featured on Anfield Rap and World in Motion in the past .",
+    "sha256_input": "5399cee9fdbeb99325138dd675d6b330bde438ed81bc954dd624c37d26223f69",
+    "sha256_output": "431637d6d6b7522a3bde88ee5ff1d7c4decc2bf797b04720c10f86e6e8a9a07c",
+    "extra": {}
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "6113e9d4732c98760229df50773df417b3f4f540",
+    "trial": 1,
+    "article_len_chars": 2616,
+    "compressed_len_chars": 2616,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.922,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "John Higgins beats Robert Milkins 10-5 to reach second round .\nHiggins says he would love to challenge for World title again .\nBut the 39-year-old admits there are many more favoured players .\nGraeme Dott sees off Ricky Walden 10-8 .",
+    "sha256_input": "9e91294dd7a4ed984b56833f6ac90eb25c2a78aae745cd974c89cf77698d5b5c",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "432642e19523c71e986985b0a1bb82f6baa9dc4f",
+    "trial": 1,
+    "article_len_chars": 2559,
+    "compressed_len_chars": 2559,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 52.078,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Arsenal face Aston Villa in the FA Cup final at Wembley on May 30 .\nTim Sherwood's side won the toss to decide which kit they'll wear .\nVilla chose their claret and blue home strip for the FA Cup showdown .\nArsenal will play in their yellow and blue away kit .\nThe Gunners have won three of the five finals played in the kit .",
+    "sha256_input": "e603a37405b4416ef5e83aef9c623e2116fc77095103eafa2065ca7a2932b383",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "15fffd5f6e0249a50b8ff64afa785a56e3cd6329",
+    "trial": 1,
+    "article_len_chars": 2804,
+    "compressed_len_chars": 2804,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 51.515,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Coutinho hit the only goal of the game as Liverpool beat Blackburn .\nThey will meet Aston Villa in the semi-finals a week on Sunday .\nLiverpool skipper Henderson had not slept the night before the game as his wife gave birth to his second daughter .\nBoss Brendan Rodgers revealed Henderson had no thoughts about missing the match .\n'He said to me, \"Boss, as soon as the baby's out, I'll be coming back\",' Rodgers explained .",
+    "sha256_input": "ea94d8aa19764afbc191d30f0225484a1576aa8927b7dd7ae8b944f07b178924",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "a4f3403c0c05589f939d0f4ddb138e8e2c5d288e",
+    "trial": 1,
+    "article_len_chars": 1762,
+    "compressed_len_chars": 1762,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 51.25,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Members of 30 rock band members merged into one face each .\nBeatles look like Paul McCartney, Nirvana look like Kurt Cobain .\nU2, Rolling Stones and Green Day are a bizarre blend .",
+    "sha256_input": "95e7afd1d0a4777a76d6e3de35f8c6c10c036bc8a99a876453cb5788cb1eedc9",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "bc526b7c50b3b816751a6a692cdb7324d980a576",
+    "trial": 1,
+    "article_len_chars": 4916,
+    "compressed_len_chars": 4916,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.672,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Mother-of-one Tayler Chaice Buzbee called Aspen Dental with toothache .\nShe was told only available appointment at the facility was in 20 minutes .\nHad no time to find babysitter for baby son, Attley, so brought him along .\nStarted breastfeeding the nine-month-old in chair when he created a fuss .\nBut soon after, female employee 'took him out of her arms without asking'\nWoman 'placed him in his stroller, saying breastfeeding was not allowed'\n'I was humiliated, crying, and I felt embarrassed to be there,' said Tayler .\nAspen Dental has since apologized to Tayler and launched investigation .",
+    "sha256_input": "1898cfbc5af1024b4d88762005c269a09ce450e4a419070ab326d61ac50f9d96",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  },
+  {
+    "contender": "baseline-langchain",
+    "sample_id": "ca5cf6768d5700c8e944d7ec773d2116075d9003",
+    "trial": 1,
+    "article_len_chars": 3079,
+    "compressed_len_chars": 3079,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "tokens_billed_usd": 0.0,
+    "wall_clock_seconds": 50.907,
+    "retry_count": 0,
+    "rouge_l_f1": 0.0,
+    "summary": "",
+    "reference": "Heart-broken Tony Tancock, 56, has won prizes for specially-bred guinea pigs .\nA thief stole a dozen of his best from his home in Devon and left eight behind .\nSays only an expert could have targetted them and left ordinary ones behind .\n'They knew exactly what they were looking for,' a devastated Tancock claimed .",
+    "sha256_input": "2be4d43d7468957250e038c32fece663f7af144a11adb38b98dd139264a16e8c",
+    "sha256_output": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "extra": {
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kn59han2erbvdq2jx5m8v71h` service t"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "nexus-v09-smart-compressor": {
+    "n_measurements": 5,
+    "rouge_l_mean": 0.2561,
+    "rouge_l_sem": 0.0464,
+    "rouge_l_95ci": [
+      0.1651,
+      0.3472
+    ],
+    "wall_mean_s": 70.841,
+    "wall_sem_s": 16.43,
+    "wall_95ci_s": [
+      38.638,
+      103.043
+    ],
+    "wall_p50_s": 71.437,
+    "wall_p95_s": 87.454,
+    "avg_tokens_in": 517.8,
+    "avg_tokens_out": 241.4,
+    "total_tokens_in": 2589,
+    "total_tokens_out": 1207,
+    "total_usd": 0.002482,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  }
+}

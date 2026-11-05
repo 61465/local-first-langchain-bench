@@ -1,0 +1,87 @@
+
+=== Workload A: DIALOGUE (DialogSum MIT, n=10) ===
+
+--- A1/10 id=test_436_2 dlg=505ch comp=505ch ---
+  baseline   OK  tokens_in=247 wall=0.66s
+  compressor OK  tokens_in=247 wall=0.86s
+
+--- A2/10 id=test_76_1 dlg=783ch comp=574ch ---
+  baseline   OK  tokens_in=292 wall=0.95s
+  compressor OK  tokens_in=234 wall=0.70s
+
+--- A3/10 id=test_17_1 dlg=277ch comp=277ch ---
+  baseline   OK  tokens_in=170 wall=0.70s
+  compressor OK  tokens_in=170 wall=0.67s
+
+--- A4/10 id=test_187_3 dlg=413ch comp=413ch ---
+  baseline   OK  tokens_in=200 wall=0.62s
+  compressor OK  tokens_in=200 wall=0.66s
+
+--- A5/10 id=test_167_1 dlg=1035ch comp=626ch ---
+  baseline   OK  tokens_in=367 wall=0.56s
+  compressor OK  tokens_in=264 wall=0.61s
+
+--- A6/10 id=test_152_2 dlg=565ch comp=565ch ---
+  baseline   OK  tokens_in=243 wall=0.62s
+  compressor OK  tokens_in=243 wall=0.61s
+
+--- A7/10 id=test_95_1 dlg=976ch comp=703ch ---
+  baseline   OK  tokens_in=322 wall=0.72s
+  compressor OK  tokens_in=253 wall=0.64s
+
+--- A8/10 id=test_69_3 dlg=482ch comp=482ch ---
+  baseline   OK  tokens_in=218 wall=0.62s
+  compressor OK  tokens_in=218 wall=0.59s
+
+--- A9/10 id=test_461_3 dlg=415ch comp=415ch ---
+  baseline   OK  tokens_in=199 wall=0.64s
+  compressor OK  tokens_in=199 wall=0.61s
+
+--- A10/10 id=test_372_1 dlg=811ch comp=811ch ---
+  baseline   OK  tokens_in=288 wall=0.64s
+  compressor OK  tokens_in=288 wall=0.67s
+
+=== Workload B: TOOL-CALL (synthetic, n=10) ===
+System prompt: 2943ch → compressed 1775ch
+
+--- B1/10 user='Can you find the latest PostgreSQL 16 release notes and summ...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B2/10 user='I need you to search for 'OIDC token refresh best practices'...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B3/10 user='Query the users table for all signups in the last 7 days, gr...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B4/10 user='Run the test suite in the current directory and if it passes...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B5/10 user='Search for '2026 AI framework market share', save the summar...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B6/10 user='Read config/app.yaml, if the debug flag is true, send an ema...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B7/10 user='Query orders where total > $1000 in the last month, format a...' ---
+  baseline   OK  tokens_in=854 wall=1.33s
+  compressor OK  tokens_in=579 wall=1.34s
+
+--- B8/10 user='Search for 'RAG system evaluation metrics' papers, read the ...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B9/10 user='Run 'make benchmark' in the ml/ directory with a 5-minute ti...' ---
+  baseline   ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+--- B10/10 user='Find Monday's standup notes in docs/standups/, extract actio...' ---
+  baseline   OK  tokens_in=844 wall=1.45s
+  compressor ERR HTTP Error 400: Bad Request {"error":{"message":"Tool choice is none, but model 
+
+✓ Wrote 40 rows to D:\project\local-first-langchain-bench\results\r7\rows.json

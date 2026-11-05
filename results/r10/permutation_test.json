@@ -1,0 +1,10 @@
+{
+  "n": 11,
+  "observed_sum": -898,
+  "observed_mean": -81.63636363636364,
+  "permutations": 2048,
+  "count_as_extreme": 1,
+  "one_sided_p": 0.00048828125,
+  "two_sided_p": 0.0009765625,
+  "diffs_all_negative": true
+}

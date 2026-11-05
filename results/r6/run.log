@@ -1,0 +1,103 @@
+Matched 11/11 fair-subset articles from CNN/DM test split
+Loaded 11 fair-subset articles
+
+--- sample 1/11 66e02180 ---
+  article=2129ch, compressed=1445ch (67.9%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=500  wall=1.02s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=370  wall=0.70s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=500  wall=0.77s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=370  wall=0.62s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=454  wall=0.50s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=320  wall=0.47s
+
+--- sample 2/11 85afff41 ---
+  article=3312ch, compressed=1871ch (56.5%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=824  wall=0.69s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=512  wall=0.88s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=824  wall=0.94s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=512  wall=0.73s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=781  wall=0.52s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=467  wall=0.45s
+
+--- sample 3/11 a4f3403c ---
+  article=1762ch, compressed=1089ch (61.8%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=494  wall=0.76s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=336  wall=0.89s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=494  wall=1.47s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=336  wall=1.09s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=443  wall=0.44s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=283  wall=0.47s
+
+--- sample 4/11 197354ba ---
+  article=1959ch, compressed=1238ch (63.2%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=541  wall=0.64s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=374  wall=0.91s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=541  wall=0.62s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=374  wall=1.95s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=493  wall=0.49s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=325  wall=0.47s
+
+--- sample 5/11 432642e1 ---
+  article=2559ch, compressed=1781ch (69.6%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=639  wall=0.67s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=466  wall=0.75s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=639  wall=0.66s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=466  wall=0.52s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=625  wall=0.55s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=436  wall=0.42s
+
+--- sample 6/11 6113e9d4 ---
+  article=2616ch, compressed=1561ch (59.7%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=672  wall=0.72s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=448  wall=0.89s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=672  wall=0.52s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=448  wall=0.67s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=639  wall=0.47s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=407  wall=0.45s
+
+--- sample 7/11 8f1ee28a ---
+  article=1916ch, compressed=1258ch (65.7%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=524  wall=1.00s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=368  wall=1.09s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=524  wall=0.45s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=368  wall=0.50s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=488  wall=0.48s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=325  wall=0.45s
+
+--- sample 8/11 ca5cf676 ---
+  article=3079ch, compressed=2171ch (70.5%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=743  wall=0.67s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=561  wall=0.64s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=743  wall=0.64s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=561  wall=1.05s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=709  wall=0.49s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=519  wall=0.42s
+
+--- sample 9/11 15fffd5f ---
+  article=2804ch, compressed=1282ch (45.7%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=693  wall=0.67s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=377  wall=0.89s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=693  wall=1.48s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=377  wall=0.75s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=654  wall=0.45s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=328  wall=0.44s
+
+--- sample 10/11 ebd2dd30 ---
+  article=3848ch, compressed=2136ch (55.5%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=889  wall=0.86s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=534  wall=0.59s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=889  wall=0.69s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=534  wall=0.52s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=847  wall=0.47s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=483  wall=0.45s
+
+--- sample 11/11 868be1a9 ---
+  article=3253ch, compressed=1947ch (59.9%)
+  openai/gpt-oss-120b             baseline    OK  tokens_in=854  wall=0.78s
+  openai/gpt-oss-120b             compressor  OK  tokens_in=535  wall=0.89s
+  openai/gpt-oss-20b              baseline    OK  tokens_in=854  wall=0.72s
+  openai/gpt-oss-20b              compressor  OK  tokens_in=535  wall=0.56s
+  qwen/qwen3.8-27b                baseline    OK  tokens_in=824  wall=0.56s
+  qwen/qwen3.8-27b                compressor  OK  tokens_in=495  wall=0.48s
+
+✓ Wrote 66 rows to D:\project\local-first-langchain-bench\results\r6\rows.json

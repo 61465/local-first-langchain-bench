@@ -1,0 +1,32 @@
+{
+  "n_paired": 86,
+  "hstc_reduction": {
+    "median_pct": 49.15896753314543,
+    "mean_pct": 46.3905822570857,
+    "ci_95_median_pct": [
+      0.4643378651154578,
+      0.5080428597308213
+    ],
+    "range_pct": [
+      13.672922252010725,
+      62.538071065989854
+    ]
+  },
+  "v2a_reduction": {
+    "median_pct": 36.23850815997528,
+    "mean_pct": 33.22039596912391,
+    "ci_95_median_pct": [
+      0.3218210361067504,
+      0.37534995091040824
+    ]
+  },
+  "hstc_vs_v2a_paired": {
+    "extra_reduction_median_pct": 19.312806892424728,
+    "extra_reduction_mean_pct": 19.87247656782188,
+    "wilcoxon_statistic": 0.0,
+    "wilcoxon_p": 7.964749795367046e-16,
+    "cohen_d_paired": -2.5310840702088035,
+    "direction_stability_pct": 100.0,
+    "power_observed_pct": 100.0
+  }
+}

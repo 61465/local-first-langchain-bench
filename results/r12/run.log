@@ -1,0 +1,81 @@
+
+--- 1/10 id=test_436_2 dlg=505ch detected=news ---
+  v2a:    505ch (0.0%)
+  hstc:   396ch (21.6%)
+  adapt:  396ch (21.6%)
+    baseline   OK  tokens_in=247 wall=0.66s
+    v2a        OK  tokens_in=247 wall=0.48s
+    hstc       OK  tokens_in=203 wall=0.64s
+    adaptive   OK  tokens_in=203 wall=0.67s
+
+--- 2/10 id=test_76_1 dlg=783ch detected=dialogue ---
+  v2a:    574ch (26.7%)
+  hstc:   403ch (48.5%)
+  adapt:  488ch (37.7%)
+    baseline   OK  tokens_in=292 wall=0.41s
+    v2a        OK  tokens_in=234 wall=0.81s
+    hstc       OK  tokens_in=193 wall=7.67s
+    adaptive   OK  tokens_in=218 wall=0.75s
+
+--- 3/10 id=test_17_1 dlg=277ch detected=dialogue ---
+  v2a:    277ch (0.0%)
+  hstc:   251ch (9.4%)
+  adapt:  277ch (0.0%)
+    baseline   OK  tokens_in=170 wall=0.70s
+    v2a        OK  tokens_in=170 wall=0.77s
+    hstc       OK  tokens_in=164 wall=0.75s
+    adaptive   OK  tokens_in=170 wall=7.67s
+
+--- 4/10 id=test_187_3 dlg=413ch detected=dialogue ---
+  v2a:    413ch (0.0%)
+  hstc:   331ch (19.9%)
+  adapt:  382ch (7.5%)
+    baseline   OK  tokens_in=200 wall=0.88s
+    v2a        OK  tokens_in=200 wall=0.88s
+    hstc       OK  tokens_in=181 wall=0.73s
+    adaptive   OK  tokens_in=196 wall=0.92s
+
+--- 5/10 id=test_167_1 dlg=1035ch detected=dialogue ---
+  v2a:    626ch (39.5%)
+  hstc:   452ch (56.3%)
+  adapt:  597ch (42.3%)
+    baseline   OK  tokens_in=367 wall=3.81s
+    v2a        OK  tokens_in=264 wall=0.95s
+    adaptive   OK  tokens_in=260 wall=0.67s
+
+--- 6/10 id=test_152_2 dlg=565ch detected=dialogue ---
+  v2a:    565ch (0.0%)
+  hstc:   460ch (18.6%)
+  adapt:  539ch (4.6%)
+    baseline   OK  tokens_in=243 wall=0.56s
+    hstc       OK  tokens_in=209 wall=0.62s
+
+--- 7/10 id=test_95_1 dlg=976ch detected=dialogue ---
+  v2a:    703ch (28.0%)
+  hstc:   563ch (42.3%)
+  adapt:  635ch (34.9%)
+    v2a        OK  tokens_in=253 wall=0.77s
+    hstc       OK  tokens_in=225 wall=1.00s
+
+--- 8/10 id=test_69_3 dlg=482ch detected=dialogue ---
+  v2a:    482ch (0.0%)
+  hstc:   371ch (23.0%)
+  adapt:  450ch (6.6%)
+    v2a        OK  tokens_in=218 wall=0.67s
+    adaptive   OK  tokens_in=206 wall=0.66s
+
+--- 9/10 id=test_461_3 dlg=415ch detected=dialogue ---
+  v2a:    415ch (0.0%)
+  hstc:   329ch (20.7%)
+  adapt:  387ch (6.7%)
+    v2a        OK  tokens_in=199 wall=0.69s
+    hstc       OK  tokens_in=171 wall=0.97s
+
+--- 10/10 id=test_372_1 dlg=811ch detected=dialogue ---
+  v2a:    811ch (0.0%)
+  hstc:   621ch (23.4%)
+  adapt:  727ch (10.4%)
+    v2a        OK  tokens_in=288 wall=2.31s
+    hstc       OK  tokens_in=242 wall=0.69s
+
+✓ Wrote 40 rows to D:\project\local-first-langchain-bench\results\r12\rows.json

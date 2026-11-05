@@ -1,0 +1,420 @@
+Loading CNN/DM test split...
+Need 100 more paired samples
+
+--- 1/100 id=1c4ba950 article=1977ch comp=1272ch ---
+  baseline   OK  tokens_in=509 wall=0.91s
+  compressor OK  tokens_in=366 wall=0.70s
+
+--- 2/100 id=a8d675b7 article=4328ch comp=2494ch ---
+  baseline   OK  tokens_in=973 wall=0.49s
+  compressor OK  tokens_in=606 wall=0.70s
+
+--- 3/100 id=1514bbfb article=4001ch comp=2004ch ---
+  baseline   OK  tokens_in=933 wall=0.53s
+  compressor OK  tokens_in=518 wall=0.80s
+
+--- 4/100 id=3e4d4b1a article=4661ch comp=2440ch ---
+  baseline   OK  tokens_in=1025 wall=0.73s
+  compressor OK  tokens_in=585 wall=1.30s
+
+--- 5/100 id=5892dfb6 article=1814ch comp=1281ch ---
+  baseline   OK  tokens_in=449 wall=0.45s
+  compressor OK  tokens_in=356 wall=0.53s
+
+--- 6/100 id=867f5ddb article=1307ch comp=819ch ---
+  baseline   OK  tokens_in=367 wall=0.66s
+  compressor OK  tokens_in=263 wall=0.44s
+
+--- 7/100 id=8186c902 article=562ch comp=562ch ---
+  baseline   OK  tokens_in=210 wall=0.64s
+  compressor OK  tokens_in=210 wall=0.48s
+
+--- 8/100 id=3b26f417 article=3134ch comp=1815ch ---
+  baseline   OK  tokens_in=766 wall=0.72s
+  compressor OK  tokens_in=479 wall=0.62s
+
+--- 9/100 id=6d6fbba1 article=4981ch comp=2564ch ---
+  baseline   OK  tokens_in=1095 wall=0.95s
+  compressor OK  tokens_in=635 wall=0.73s
+
+--- 10/100 id=6c33eb78 article=2987ch comp=1667ch ---
+  baseline   OK  tokens_in=735 wall=0.72s
+  compressor OK  tokens_in=466 wall=0.67s
+
+--- 11/100 id=f9c253d0 article=1956ch comp=1441ch ---
+  baseline   OK  tokens_in=553 wall=0.67s
+  compressor OK  tokens_in=429 wall=0.98s
+
+--- 12/100 id=edfeea69 article=3514ch comp=2113ch ---
+  baseline   OK  tokens_in=898 wall=0.58s
+  compressor OK  tokens_in=569 wall=1.03s
+
+--- 13/100 id=7638ccd8 article=4973ch comp=2312ch ---
+  baseline   OK  tokens_in=1185 wall=0.53s
+  compressor OK  tokens_in=590 wall=1.97s
+
+--- 14/100 id=14559296 article=1983ch comp=1204ch ---
+  baseline   OK  tokens_in=507 wall=0.67s
+  compressor OK  tokens_in=347 wall=1.20s
+
+--- 15/100 id=75d3a5fe article=1194ch comp=938ch ---
+  baseline   OK  tokens_in=345 wall=0.45s
+  compressor OK  tokens_in=298 wall=1.17s
+
+--- 16/100 id=747a2b8b article=3617ch comp=1983ch ---
+  baseline   OK  tokens_in=903 wall=0.88s
+  compressor OK  tokens_in=533 wall=0.62s
+
+--- 17/100 id=a316a0a9 article=4215ch comp=2277ch ---
+  baseline   OK  tokens_in=950 wall=0.45s
+  compressor OK  tokens_in=560 wall=0.55s
+
+--- 18/100 id=62d6e638 article=2855ch comp=1874ch ---
+  baseline   OK  tokens_in=701 wall=0.48s
+  compressor OK  tokens_in=506 wall=0.53s
+
+--- 19/100 id=5bbfc8dc article=3873ch comp=2120ch ---
+  baseline   OK  tokens_in=930 wall=1.00s
+  compressor OK  tokens_in=542 wall=2.22s
+
+--- 20/100 id=cfed2378 article=4897ch comp=2259ch ---
+  baseline   OK  tokens_in=1150 wall=0.77s
+  compressor OK  tokens_in=590 wall=0.69s
+
+--- 21/100 id=5fba9d52 article=4877ch comp=2840ch ---
+    429 backoff 30s
+  baseline   OK  tokens_in=1122 wall=0.70s
+  compressor OK  tokens_in=713 wall=0.83s
+
+--- 22/100 id=de45d9d9 article=3359ch comp=1771ch ---
+  baseline   OK  tokens_in=759 wall=0.69s
+  compressor OK  tokens_in=451 wall=0.64s
+
+--- 23/100 id=3a291f24 article=1328ch comp=1328ch ---
+  baseline   OK  tokens_in=373 wall=1.86s
+  compressor OK  tokens_in=373 wall=1.23s
+
+--- 24/100 id=bc92e8db article=5997ch comp=3178ch ---
+  baseline   OK  tokens_in=1281 wall=2.14s
+  compressor OK  tokens_in=699 wall=0.97s
+
+--- 25/100 id=c270aa81 article=1893ch comp=1404ch ---
+  baseline   OK  tokens_in=524 wall=0.91s
+  compressor OK  tokens_in=413 wall=0.91s
+
+--- 26/100 id=879671e8 article=4227ch comp=2453ch ---
+  baseline   OK  tokens_in=972 wall=0.80s
+  compressor OK  tokens_in=583 wall=0.47s
+
+--- 27/100 id=ab11d792 article=2027ch comp=1661ch ---
+  baseline   OK  tokens_in=514 wall=0.89s
+  compressor OK  tokens_in=432 wall=1.22s
+
+--- 28/100 id=10907d89 article=4663ch comp=2740ch ---
+  baseline   OK  tokens_in=1095 wall=1.89s
+  compressor OK  tokens_in=687 wall=1.22s
+
+--- 29/100 id=d5e09175 article=4993ch comp=3074ch ---
+  baseline   OK  tokens_in=1190 wall=1.00s
+    429 backoff 30s
+  compressor OK  tokens_in=769 wall=1.41s
+
+--- 30/100 id=128f4086 article=3630ch comp=2125ch ---
+  baseline   OK  tokens_in=857 wall=0.91s
+  compressor OK  tokens_in=539 wall=0.97s
+
+--- 31/100 id=47b84645 article=2183ch comp=1272ch ---
+  baseline   OK  tokens_in=533 wall=1.22s
+  compressor OK  tokens_in=349 wall=1.80s
+
+--- 32/100 id=518b418c article=2184ch comp=1475ch ---
+  baseline   OK  tokens_in=542 wall=0.73s
+  compressor OK  tokens_in=389 wall=1.41s
+
+--- 33/100 id=dd7c9bce article=2936ch comp=1991ch ---
+  baseline   OK  tokens_in=750 wall=1.50s
+  compressor OK  tokens_in=521 wall=1.16s
+
+--- 34/100 id=53a6fdea article=3310ch comp=2270ch ---
+  baseline   OK  tokens_in=815 wall=1.74s
+  compressor OK  tokens_in=582 wall=0.94s
+
+--- 35/100 id=1047ebfa article=5038ch comp=2872ch ---
+  baseline   OK  tokens_in=1239 wall=1.17s
+  compressor OK  tokens_in=745 wall=2.52s
+
+--- 36/100 id=c5bedadb article=2512ch comp=1348ch ---
+  baseline   OK  tokens_in=641 wall=1.34s
+  compressor OK  tokens_in=390 wall=2.42s
+
+--- 37/100 id=97856d25 article=2207ch comp=1427ch ---
+  baseline   OK  tokens_in=554 wall=0.95s
+  compressor OK  tokens_in=385 wall=1.17s
+
+--- 38/100 id=eec44c85 article=5611ch comp=2917ch ---
+  baseline   OK  tokens_in=1233 wall=2.88s
+  compressor OK  tokens_in=688 wall=0.88s
+
+--- 39/100 id=5ebe115c article=2931ch comp=1525ch ---
+  baseline   OK  tokens_in=713 wall=0.80s
+  compressor OK  tokens_in=407 wall=0.56s
+
+--- 40/100 id=f8e569d2 article=3978ch comp=2245ch ---
+  baseline   OK  tokens_in=952 wall=0.84s
+  compressor OK  tokens_in=574 wall=1.03s
+
+--- 41/100 id=2f3a3e30 article=5162ch comp=3420ch ---
+  baseline   OK  tokens_in=1152 wall=1.62s
+    429 backoff 30s
+  compressor OK  tokens_in=797 wall=0.81s
+
+--- 42/100 id=3f54c155 article=5393ch comp=2487ch ---
+  baseline   OK  tokens_in=1275 wall=1.98s
+  compressor OK  tokens_in=638 wall=2.77s
+
+--- 43/100 id=e4e79f64 article=3783ch comp=2263ch ---
+  baseline   OK  tokens_in=902 wall=2.17s
+  compressor OK  tokens_in=572 wall=0.58s
+
+--- 44/100 id=ec49dc2a article=5237ch comp=2919ch ---
+  baseline   OK  tokens_in=1191 wall=1.33s
+  compressor OK  tokens_in=728 wall=6.66s
+
+--- 45/100 id=1b88d77d article=3653ch comp=2155ch ---
+  baseline   OK  tokens_in=868 wall=0.88s
+  compressor OK  tokens_in=562 wall=2.84s
+
+--- 46/100 id=ea7333f6 article=4958ch comp=2732ch ---
+  baseline   OK  tokens_in=1068 wall=0.84s
+  compressor OK  tokens_in=620 wall=1.36s
+
+--- 47/100 id=255f6290 article=4010ch comp=2072ch ---
+  baseline   OK  tokens_in=894 wall=1.97s
+  compressor OK  tokens_in=514 wall=0.53s
+
+--- 48/100 id=3612c620 article=2758ch comp=1621ch ---
+  baseline   OK  tokens_in=724 wall=0.67s
+  compressor OK  tokens_in=447 wall=1.16s
+
+--- 49/100 id=34b8521a article=1693ch comp=848ch ---
+  baseline   OK  tokens_in=464 wall=0.53s
+  compressor OK  tokens_in=280 wall=1.80s
+
+--- 50/100 id=ec899ca7 article=3414ch comp=2316ch ---
+  baseline   OK  tokens_in=801 wall=1.08s
+  compressor OK  tokens_in=579 wall=1.55s
+
+--- 51/100 id=a31e2a3c article=1911ch comp=1378ch ---
+  baseline   OK  tokens_in=495 wall=5.75s
+  compressor OK  tokens_in=387 wall=0.67s
+
+--- 52/100 id=a305398b article=2020ch comp=1374ch ---
+  baseline   OK  tokens_in=538 wall=0.97s
+  compressor OK  tokens_in=388 wall=1.14s
+
+--- 53/100 id=c30a8bde article=4837ch comp=2895ch ---
+  baseline   OK  tokens_in=1055 wall=1.58s
+  compressor OK  tokens_in=670 wall=0.80s
+
+--- 54/100 id=07aed689 article=3572ch comp=1982ch ---
+  baseline   OK  tokens_in=883 wall=0.66s
+  compressor OK  tokens_in=532 wall=0.58s
+
+--- 55/100 id=6195595c article=2388ch comp=1343ch ---
+  baseline   OK  tokens_in=609 wall=0.88s
+  compressor OK  tokens_in=380 wall=1.11s
+
+--- 56/100 id=c98896ad article=1429ch comp=1051ch ---
+  baseline   OK  tokens_in=416 wall=0.75s
+  compressor OK  tokens_in=321 wall=0.74s
+
+--- 57/100 id=34cbdd1c article=3548ch comp=1983ch ---
+  baseline   OK  tokens_in=836 wall=1.30s
+  compressor OK  tokens_in=507 wall=0.53s
+
+--- 58/100 id=bd20515f article=2212ch comp=1576ch ---
+  baseline   OK  tokens_in=546 wall=2.09s
+  compressor OK  tokens_in=423 wall=0.92s
+
+--- 59/100 id=66c4036e article=1661ch comp=1276ch ---
+  baseline   OK  tokens_in=429 wall=0.89s
+  compressor OK  tokens_in=353 wall=1.00s
+
+--- 60/100 id=173e140b article=4342ch comp=2282ch ---
+    429 backoff 30s
+  baseline   OK  tokens_in=947 wall=1.00s
+  compressor OK  tokens_in=534 wall=1.11s
+
+--- 61/100 id=399c9461 article=2400ch comp=1030ch ---
+  baseline   OK  tokens_in=592 wall=0.78s
+  compressor OK  tokens_in=308 wall=1.14s
+
+--- 62/100 id=e4f34f01 article=5904ch comp=3329ch ---
+  baseline   OK  tokens_in=1352 wall=0.66s
+  compressor OK  tokens_in=799 wall=0.77s
+
+--- 63/100 id=c9b1b098 article=2925ch comp=1948ch ---
+  baseline   OK  tokens_in=734 wall=0.81s
+  compressor OK  tokens_in=531 wall=0.52s
+
+--- 64/100 id=f78024d2 article=3598ch comp=1415ch ---
+  baseline   OK  tokens_in=859 wall=0.61s
+  compressor OK  tokens_in=398 wall=1.80s
+
+--- 65/100 id=2888d0cb article=2472ch comp=1723ch ---
+  baseline   OK  tokens_in=611 wall=0.88s
+  compressor OK  tokens_in=456 wall=1.77s
+
+--- 66/100 id=8ee64154 article=5045ch comp=2873ch ---
+  baseline   OK  tokens_in=1199 wall=0.92s
+  compressor OK  tokens_in=729 wall=1.05s
+
+--- 67/100 id=69f8ad5a article=3106ch comp=1900ch ---
+  baseline   OK  tokens_in=744 wall=0.86s
+    429 backoff 30s
+  compressor OK  tokens_in=483 wall=0.55s
+
+--- 68/100 id=06a4f261 article=1384ch comp=915ch ---
+  baseline   OK  tokens_in=395 wall=1.25s
+  compressor OK  tokens_in=294 wall=0.75s
+
+--- 69/100 id=ce1e44b1 article=2523ch comp=1652ch ---
+  baseline   OK  tokens_in=606 wall=0.83s
+  compressor OK  tokens_in=430 wall=1.50s
+
+--- 70/100 id=8b32b0d8 article=2683ch comp=1957ch ---
+  baseline   OK  tokens_in=670 wall=0.80s
+  compressor OK  tokens_in=503 wall=1.84s
+
+--- 71/100 id=6d5b7239 article=4962ch comp=2795ch ---
+  baseline   OK  tokens_in=1171 wall=0.77s
+  compressor OK  tokens_in=708 wall=0.91s
+
+--- 72/100 id=c8f6b622 article=2832ch comp=1671ch ---
+  baseline   OK  tokens_in=695 wall=0.53s
+  compressor OK  tokens_in=449 wall=2.45s
+
+--- 73/100 id=2025be23 article=5587ch comp=2922ch ---
+  baseline   OK  tokens_in=1332 wall=3.01s
+  compressor OK  tokens_in=731 wall=1.75s
+
+--- 74/100 id=17cc85ec article=4261ch comp=1760ch ---
+  baseline   OK  tokens_in=985 wall=2.86s
+  compressor OK  tokens_in=457 wall=0.66s
+
+--- 75/100 id=7e4e7fb2 article=2541ch comp=1623ch ---
+  baseline   OK  tokens_in=637 wall=1.03s
+  compressor OK  tokens_in=432 wall=0.73s
+
+--- 76/100 id=e3e17921 article=1769ch comp=1043ch ---
+  baseline   OK  tokens_in=471 wall=1.94s
+  compressor OK  tokens_in=322 wall=0.64s
+
+--- 77/100 id=bdc472f1 article=3133ch comp=1640ch ---
+  baseline   OK  tokens_in=746 wall=0.75s
+  compressor OK  tokens_in=444 wall=0.70s
+
+--- 78/100 id=a6966f0e article=5972ch comp=3064ch ---
+  baseline   OK  tokens_in=1339 wall=0.75s
+  compressor OK  tokens_in=708 wall=0.84s
+
+--- 79/100 id=91435983 article=3045ch comp=1791ch ---
+  baseline   OK  tokens_in=753 wall=0.91s
+  compressor OK  tokens_in=477 wall=0.66s
+
+--- 80/100 id=279b6767 article=2568ch comp=2110ch ---
+  baseline   OK  tokens_in=650 wall=0.66s
+  compressor OK  tokens_in=558 wall=0.69s
+
+--- 81/100 id=db92965c article=1710ch comp=1710ch ---
+  baseline   OK  tokens_in=471 wall=0.62s
+  compressor OK  tokens_in=471 wall=0.78s
+
+--- 82/100 id=fbc2e057 article=5286ch comp=3036ch ---
+    429 backoff 30s
+  baseline   OK  tokens_in=1277 wall=0.75s
+  compressor OK  tokens_in=751 wall=2.69s
+
+--- 83/100 id=f65e29ec article=5907ch comp=2799ch ---
+  baseline   OK  tokens_in=1339 wall=0.78s
+  compressor OK  tokens_in=688 wall=0.48s
+
+--- 84/100 id=65746358 article=3626ch comp=1882ch ---
+  baseline   OK  tokens_in=852 wall=0.74s
+  compressor OK  tokens_in=483 wall=0.72s
+
+--- 85/100 id=41126c15 article=4032ch comp=2431ch ---
+  baseline   OK  tokens_in=941 wall=0.72s
+  compressor OK  tokens_in=606 wall=0.64s
+
+--- 86/100 id=4ac39a81 article=2730ch comp=1350ch ---
+  baseline   OK  tokens_in=684 wall=0.56s
+  compressor OK  tokens_in=390 wall=0.44s
+
+--- 87/100 id=7d02986e article=4618ch comp=2341ch ---
+  baseline   OK  tokens_in=1003 wall=0.69s
+  compressor OK  tokens_in=539 wall=0.70s
+
+--- 88/100 id=a5de1bb3 article=5626ch comp=3377ch ---
+    429 backoff 30s
+  baseline   OK  tokens_in=1297 wall=0.72s
+  compressor OK  tokens_in=825 wall=1.08s
+
+--- 89/100 id=aca7b9d4 article=4249ch comp=2398ch ---
+  baseline   OK  tokens_in=1003 wall=1.06s
+  compressor OK  tokens_in=611 wall=0.53s
+
+--- 90/100 id=d7349717 article=4331ch comp=2970ch ---
+  baseline   OK  tokens_in=966 wall=0.59s
+  compressor OK  tokens_in=684 wall=0.62s
+
+--- 91/100 id=6b488d84 article=5061ch comp=2636ch ---
+  baseline   OK  tokens_in=1244 wall=0.89s
+  compressor OK  tokens_in=701 wall=0.69s
+
+--- 92/100 id=82c6b685 article=2639ch comp=1713ch ---
+  baseline   OK  tokens_in=669 wall=0.56s
+  compressor OK  tokens_in=470 wall=0.69s
+
+--- 93/100 id=d9acb200 article=3193ch comp=2053ch ---
+    429 backoff 30s
+  baseline   FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+  compressor FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+
+--- 93/100 id=d9ef9940 article=1948ch comp=1283ch ---
+  baseline   FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+  compressor FAIL <urlopen error [Errno 11001] getaddrinfo failed> 
+
+--- 93/100 id=b0538ce0 article=2684ch comp=1259ch ---
+  baseline   OK  tokens_in=674 wall=2.19s
+  compressor OK  tokens_in=367 wall=0.67s
+
+--- 94/100 id=36e476c4 article=1739ch comp=1739ch ---
+  baseline   OK  tokens_in=493 wall=0.73s
+  compressor OK  tokens_in=493 wall=1.08s
+
+--- 95/100 id=84947a18 article=4420ch comp=2651ch ---
+  baseline   OK  tokens_in=1078 wall=1.16s
+  compressor OK  tokens_in=689 wall=0.48s
+
+--- 96/100 id=63b62b2d article=3049ch comp=1753ch ---
+  baseline   OK  tokens_in=824 wall=0.53s
+  compressor OK  tokens_in=504 wall=0.77s
+
+--- 97/100 id=9f20a500 article=2192ch comp=1582ch ---
+  baseline   OK  tokens_in=575 wall=0.67s
+  compressor OK  tokens_in=438 wall=0.91s
+
+--- 98/100 id=71f16c71 article=2881ch comp=1912ch ---
+  baseline   OK  tokens_in=700 wall=0.50s
+  compressor OK  tokens_in=495 wall=0.70s
+
+--- 99/100 id=4487bcbd article=1758ch comp=1222ch ---
+  baseline   OK  tokens_in=481 wall=0.52s
+  compressor OK  tokens_in=366 wall=0.48s
+
+--- 100/100 id=643f4063 article=2297ch comp=1381ch ---
+  baseline   OK  tokens_in=571 wall=0.66s
+  compressor OK  tokens_in=382 wall=0.62s
+
+✓ R8 complete. Total rows: 204

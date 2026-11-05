@@ -1,0 +1,70 @@
+Loaded 11 fair-subset articles
+
+--- 1/11 197354ba article=1959ch ---
+  v2a:  1238ch (36.8%)  16.0ms
+  hstc: 1081ch (44.8%)  0.0ms
+    baseline   OK  tokens_in=541  wall=0.86s ROUGE=0.188
+    v2a        OK  tokens_in=374  wall=0.78s ROUGE=0.182
+    hstc       OK  tokens_in=333  wall=1.16s ROUGE=0.168
+--- 2/11 a4f3403c article=1762ch ---
+  v2a:  1089ch (38.2%)  0.0ms
+  hstc: 906ch (48.6%)  0.0ms
+    baseline   OK  tokens_in=494  wall=0.97s ROUGE=0.219
+    v2a        OK  tokens_in=336  wall=0.73s ROUGE=0.190
+    hstc       OK  tokens_in=287  wall=0.88s ROUGE=0.149
+--- 3/11 66e02180 article=2129ch ---
+  v2a:  1445ch (32.1%)  0.0ms
+  hstc: 1181ch (44.5%)  0.0ms
+    baseline   OK  tokens_in=500  wall=0.94s ROUGE=0.132
+    v2a        OK  tokens_in=370  wall=0.95s ROUGE=0.133
+    hstc       OK  tokens_in=307  wall=1.09s ROUGE=0.159
+--- 4/11 15fffd5f article=2804ch ---
+  v2a:  1282ch (54.3%)  0.0ms
+  hstc: 1020ch (63.6%)  15.0ms
+    baseline   OK  tokens_in=693  wall=1.94s ROUGE=0.176
+    v2a        OK  tokens_in=377  wall=1.09s ROUGE=0.271
+    hstc       OK  tokens_in=310  wall=1.05s ROUGE=0.230
+--- 5/11 432642e1 article=2559ch ---
+  v2a:  1781ch (30.4%)  0.0ms
+  hstc: 1455ch (43.1%)  0.0ms
+    baseline   OK  tokens_in=639  wall=1.28s ROUGE=0.261
+    v2a        OK  tokens_in=466  wall=1.00s ROUGE=0.290
+    hstc       OK  tokens_in=387  wall=2.05s ROUGE=0.189
+--- 6/11 6113e9d4 article=2616ch ---
+  v2a:  1561ch (40.3%)  0.0ms
+  hstc: 1296ch (50.5%)  0.0ms
+    baseline   OK  tokens_in=672  wall=0.77s ROUGE=0.121
+    v2a        OK  tokens_in=448  wall=2.27s ROUGE=0.131
+    hstc       OK  tokens_in=383  wall=1.48s ROUGE=0.168
+--- 7/11 8f1ee28a article=1916ch ---
+  v2a:  1258ch (34.3%)  0.0ms
+  hstc: 1026ch (46.5%)  0.0ms
+    baseline   OK  tokens_in=524  wall=1.42s ROUGE=0.177
+    v2a        OK  tokens_in=368  wall=1.73s ROUGE=0.201
+    hstc       OK  tokens_in=311  wall=1.05s ROUGE=0.221
+--- 8/11 868be1a9 article=3253ch ---
+  v2a:  1947ch (40.1%)  0.0ms
+  hstc: 1431ch (56.0%)  0.0ms
+    baseline   OK  tokens_in=854  wall=0.78s ROUGE=0.183
+    v2a        OK  tokens_in=535  wall=3.42s ROUGE=0.159
+    hstc       OK  tokens_in=401  wall=1.08s ROUGE=0.153
+--- 9/11 ca5cf676 article=3079ch ---
+  v2a:  2171ch (29.5%)  0.0ms
+  hstc: 1701ch (44.8%)  0.0ms
+    baseline   OK  tokens_in=743  wall=1.38s ROUGE=0.122
+    v2a        OK  tokens_in=561  wall=1.36s ROUGE=0.118
+    hstc       OK  tokens_in=440  wall=1.52s ROUGE=0.123
+--- 10/11 85afff41 article=3312ch ---
+  v2a:  1871ch (43.5%)  0.0ms
+  hstc: 1384ch (58.2%)  15.0ms
+    baseline   OK  tokens_in=824  wall=1.64s ROUGE=0.144
+    v2a        OK  tokens_in=512  wall=1.47s ROUGE=0.137
+    hstc       OK  tokens_in=380  wall=1.05s ROUGE=0.125
+--- 11/11 ebd2dd30 article=3848ch ---
+  v2a:  2136ch (44.5%)  0.0ms
+  hstc: 1750ch (54.5%)  0.0ms
+    baseline   OK  tokens_in=889  wall=1.28s ROUGE=0.096
+    v2a        OK  tokens_in=534  wall=1.12s ROUGE=0.114
+    hstc       OK  tokens_in=444  wall=1.19s ROUGE=0.103
+
+✓ Wrote 33 rows to D:\project\local-first-langchain-bench\results\r10\rows.json

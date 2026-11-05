@@ -1,0 +1,53 @@
+{
+  "baseline-langchain": {
+    "n": 30,
+    "valid": 30,
+    "rouge_l_mean": 0.2219,
+    "rouge_l_stdev": 0.0969,
+    "wall_mean_s": 6.298,
+    "wall_stdev_s": 3.481,
+    "wall_p50_s": 7.46,
+    "wall_p95_s": 10.141,
+    "total_tokens_in": 26177,
+    "total_tokens_out": 6096,
+    "total_usd": 0.02026,
+    "avg_tokens_in": 872.6,
+    "avg_tokens_out": 203.2,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  },
+  "nexus-v09": {
+    "n": 30,
+    "valid": 30,
+    "rouge_l_mean": 0.2339,
+    "rouge_l_stdev": 0.0879,
+    "wall_mean_s": 8.35,
+    "wall_stdev_s": 3.412,
+    "wall_p50_s": 8.016,
+    "wall_p95_s": 10.813,
+    "total_tokens_in": 27936,
+    "total_tokens_out": 6456,
+    "total_usd": 0.021585,
+    "avg_tokens_in": 931.2,
+    "avg_tokens_out": 215.2,
+    "total_retries": 1,
+    "retry_rate": 0.033
+  },
+  "nexus-v09-compressor": {
+    "n": 30,
+    "valid": 30,
+    "rouge_l_mean": 0.2206,
+    "rouge_l_stdev": 0.0846,
+    "wall_mean_s": 8.064,
+    "wall_stdev_s": 2.036,
+    "wall_p50_s": 8.172,
+    "wall_p95_s": 10.5,
+    "total_tokens_in": 26097,
+    "total_tokens_out": 6438,
+    "total_usd": 0.020483,
+    "avg_tokens_in": 869.9,
+    "avg_tokens_out": 214.6,
+    "total_retries": 0,
+    "retry_rate": 0.0
+  }
+}
