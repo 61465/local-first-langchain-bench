@@ -1,0 +1,35 @@
+## Summary
+
+Propose adding **HSTC (Hybrid Sentence+Token Compression)** as a middleware-slot context compressor — zero-LLM, deterministic, drop-in Runnable. Measured on n=86 distinct CNN/DailyMail articles with full statistical reporting (paired Wilcoxon, exact permutation test, 95% bootstrap CIs, Cohen's d, power analysis, 50-string Unicode attack suite).
+
+## Headline numbers (R11 n=86 via Groq gpt-oss-20b)
+
+- **HSTC median tokens_in reduction: 49.2%** (95% CI [46.4%, 50.8%])
+- vs naive first-N-tokens truncation on same corpus: **51.5% vs 18.1%**
+- Paired Wilcoxon p=7.96×10⁻¹⁶; Cohen's d=-2.53; direction-stable on **86/86 samples**
+- Quality preserved (baseline-vs-HSTC ROUGE-L Wilcoxon p=0.97, Cohen's d=-0.064 negligible)
+- Observed output-token drift (R10 n=11 paired): median +0.5% (essentially unchanged)
+- p99 latency at 16 kB: **23 ms** (stdlib `re`, no LLM, no learned weights)
+- 74-term stopword list — 81% overlap with corpus-derived top-50 (not arbitrary)
+- All 50 Unicode/RTL/emoji attack strings handled without crash
+
+## Novelty — honest framing
+
+HSTC is **not** the first hybrid compressor overall. PromptIntern (Zou et al. EMNLP 2024, arXiv:2407.02211) is a two-stage method during fine-tuning. HSTC's narrow positioning:
+
+- **Zero-LLM** at compression time (unlike LLMLingua-2 which needs RoBERTa-large)
+- **Deterministic** (same input → same output; no stochastic weights)
+- **Drop-in-at-inference** for the LangChain middleware slot
+- **Single-provider measurement** honestly disclosed as a limitation (Groq gpt-oss family)
+
+## Not the ceiling — room to grow if accepted
+
+The 49.2% number is the **starting point**, not a limit. If maintainers see interest, several measured levers can push higher:
+
+- **Multi-provider validation** (Claude/GPT-4/Gemini direct) — straightforward follow-up
+- **Workload-tuned stopword sets** — `for_rag()`, `for_dialogue()`, `for_summarization()` already exist; domain-tuned lists (legal, medical, code) could push into the 55–60% band
+- **HSTC × static-context injection (Component D)** — PromptIntern's 90%+ reduction on recurrent prompts is complementary; not yet combined on a single workload in published literature
+- **Phase 2 LangSmith integration (Component B)** — per-chain $/req, p99, quality dashboards
+- **n≥500 power-upgrade** — R11 n=86 is limited by free-tier rate limits; paid-tier re-run narrows CIs further
+
+Happy to prioritize whichever direction maintainers see most value in.

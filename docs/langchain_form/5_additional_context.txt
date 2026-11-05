@@ -1,0 +1,41 @@
+## Links
+
+- **Full RFC** (~630 lines, 14 sections, ~6,500 words): https://github.com/61465/local-first-langchain-bench/blob/main/docs/RFC_DRAFT.md
+- **Repo** (MIT + CC0, all data + benchmarks reproducible): https://github.com/61465/local-first-langchain-bench
+- **Compressor source** (stdlib only, 160 LOC): https://github.com/61465/local-first-langchain-bench/blob/main/src/compressor_hstc.py
+- **LangChain Runnable wrapper**: https://github.com/61465/local-first-langchain-bench/blob/main/src/langchain_integration.py
+- **Stopword list** (SHA-pinned, versioned schema): https://github.com/61465/local-first-langchain-bench/blob/main/data/stopwords_v1.json
+- **Ablation + corpus-derivation analysis**: https://github.com/61465/local-first-langchain-bench/blob/main/results/hstc_ablation.json + https://github.com/61465/local-first-langchain-bench/blob/main/results/stopwords_derivation.json
+
+## Related prior work
+
+- **PromptIntern** (Zou et al., EMNLP 2024, arXiv:2407.02211) — static-prompt internalization via fine-tuning. Cited as the two-axis prior art.
+- **LLMLingua / LLMLingua-2** (Jiang et al., EMNLP 2023 / ACL 2024) — token-level compression via BERT-scale scoring model.
+- **Selective Context** (Li, 2023) — token-level removal based on self-information.
+
+HSTC's narrow contribution: inference-time, zero-LLM, deterministic hybrid for the LangChain middleware slot. Not claiming overall "first hybrid" — just the first that fits this specific design space.
+
+## Reproducibility
+
+Every reported number maps to a file:line in the repo or a published paper. Row-level JSON with SHA-256 anchors is committed in `results/{r3,r6,r7,r8,r10,r11}/rows.json`.
+
+To reproduce the core 49.2% claim:
+
+```bash
+git clone https://github.com/61465/local-first-langchain-bench
+cd local-first-langchain-bench
+pip install -r requirements.txt
+python src/r11_analyze.py   # → prints: HSTC: median=49.2% ... Wilcoxon p=7.96e-16
+```
+
+To reproduce the ablation (list sensitivity):
+
+```bash
+python src/hstc_ablation.py   # Random 50% drops change reduction by -7.5 pts (robust)
+```
+
+To reproduce the corpus-derivation check (81% overlap):
+
+```bash
+python src/stopwords_derivation.py   # 81% of hand-curated terms appear in corpus top-50
+```

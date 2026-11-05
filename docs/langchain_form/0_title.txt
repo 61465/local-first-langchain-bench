@@ -1,0 +1,1 @@
+[Feature] HSTC — zero-LLM deterministic hybrid compressor (49.2% input-token reduction, measured on n=86 CNN/DailyMail)

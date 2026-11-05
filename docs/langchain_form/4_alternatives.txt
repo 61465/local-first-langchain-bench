@@ -1,0 +1,20 @@
+**Alternatives considered and measured on the same corpus (R10 n=11 fair subset, R11 n=86 for HSTC):**
+
+| Method | Median tokens_in reduction | Mechanism | Drawbacks |
+|---|---|---|---|
+| Baseline (full article) | 0% | No compression | Full token cost |
+| **LangChain truncation (`k=485`)** | **18.1%** | Keep first-N tokens | Drops article tail unconditionally; destroys inverted-pyramid outcomes |
+| **v2a extractive** (sentence-only) | 36.2% | Drop boilerplate sentences | Still carries ~40% stopwords in kept sentences |
+| **LLMLingua-2** (published) | ~45% (MeetingBank domain) | BERT-scored token-level drop | Requires 560M-param scoring model at inference time |
+| **PromptIntern** (published) | 90%+ (recurrent prompts) | Fine-tune the recurrent prompt into weights | Requires per-agent fine-tuning run; not inference-time |
+| **HSTC (this feature)** | **49.2%** | Sentence + token hybrid, zero-LLM | 74-term hand-curated stopword list (81% corpus-overlap, ablation-tested) |
+
+**Why none of these alternatives occupy the same slot:**
+
+- **Truncation** is zero-LLM and deterministic but loses article tail. Comparable reduction % ≠ comparable quality.
+- **LLMLingua-2** gets strong reduction but needs a BERT at inference time — not zero-LLM.
+- **PromptIntern** is powerful for STATIC recurring prompts but requires fine-tuning; not useful for dynamic RAG context.
+
+**HSTC targets the dynamic content layer specifically** (RAG results, document extracts, user-pasted content) with a zero-LLM, deterministic method that composes with any LangChain chain via standard Runnable.
+
+**Two-axis framing (RFC §9):** HSTC addresses the *dynamic* axis. PromptIntern addresses the *static* axis (fine-tune the recurring system prompt into weights). The two are complementary and can be stacked. No prior work we could find measures both levers combined on a single workload — Component D in our RFC roadmap proposes doing this.

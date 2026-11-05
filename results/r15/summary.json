@@ -1,0 +1,11 @@
+{
+  "provider": "tiktoken-cl100k-approximation",
+  "tokenizer": "cl100k_base (BPE, OpenAI GPT-4 family; approximates Claude)",
+  "n": 86,
+  "median_reduction": 0.5602239853654387,
+  "mean_reduction": 0.5379431947613867,
+  "stdev_reduction": 0.09627780773764379,
+  "direction_stable": "86/86",
+  "min": 0.19298245614035087,
+  "max": 0.7073170731707317
+}

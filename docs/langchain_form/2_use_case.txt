@@ -1,0 +1,20 @@
+Agent-chain economics: the three questions every CFO asks before scaling — *"what will this cost at 10M req/day? what's the p99 under rate-pressure? how much quality do I lose if I cut 50% of tokens?"* — are currently unanswered by any component in `langchain-core`.
+
+**Current options and why they fall short:**
+
+1. **Naive truncation** (`ConversationBufferWindowMemory`, first-N tokens): keeps only the article head, unconditionally drops the tail. Measured on same corpus: 18.1% reduction. For news (inverted pyramid), this loses follow-up facts, source attribution, outcomes.
+
+2. **LLMLingua-2**: needs a 560M-param RoBERTa scoring model to run at inference time. Not zero-LLM; introduces inference latency and dependency weight for every request.
+
+3. **PromptIntern** (EMNLP 2024): internalizes recurrent prompts during fine-tuning. Powerful but requires per-agent fine-tuning run — not drop-in.
+
+**HSTC fills the gap: zero-LLM, deterministic, drop-in middleware slot.** Compresses high-information sentences distributed across the document, preserves negation/numerics/named entities, works inline in any LangChain chain via standard Runnable composition.
+
+**TCO scale at measured 49.2% reduction** (input-only reduction, output tokens unchanged; measured output drift honestly disclosed in RFC §6):
+
+- Scenario A (gpt-4o-mini @ 1M req/day): ~$18.6K/year HSTC median
+- Scenario B (Sonnet 4.6 @ 5M req/day): ~$1.85M/year
+- Scenario C (gpt-4o @ 10M req/day): ~$3.10M/year
+- Scenario D (Opus 4.6 @ 10M req/day single-chain): ~$6.18M/year
+
+Scale anchored by Klarna 20-F ($59M saved), Shopify 10-Q (+$40M LLM-infra line), Microsoft FY26 10-K ($115.95B capex).

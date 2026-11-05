@@ -1,0 +1,12 @@
+{
+  "provider": "google-gemini",
+  "model": "gemini-2.5-flash",
+  "endpoint": "countTokens",
+  "n": 86,
+  "median_reduction": 0.56991461764364,
+  "mean_reduction": 0.5489006280726678,
+  "stdev_reduction": 0.09385109869006338,
+  "direction_stable": "86/86",
+  "min": 0.21453287197231835,
+  "max": 0.7162673392181589
+}

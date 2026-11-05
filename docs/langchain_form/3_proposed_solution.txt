@@ -1,0 +1,39 @@
+LangChain integration is **already implemented and shipped** in the companion repo (`src/langchain_integration.py`):
+
+```python
+from langchain_integration import HybridCompressor
+from langchain_core.prompts import PromptTemplate
+from langchain_groq import ChatGroq
+
+# Three factory methods for workload auto-tuning
+compressor = HybridCompressor.for_rag().as_runnable()
+# Also: HybridCompressor.for_summarization(), HybridCompressor.for_dialogue()
+
+prompt = PromptTemplate.from_template("Summarize: {text}")
+llm = ChatGroq(model="openai/gpt-oss-120b")
+
+# Standard LangChain composition
+chain = (
+    {"text": compressor}
+    | prompt
+    | llm
+)
+chain.invoke("Long article text here...")
+```
+
+**Key design decisions:**
+
+- **Zero hard LangChain import at compressor load time.** `HybridCompressor.as_runnable()` auto-detects if `langchain_core` is installed; if yes, returns a `RunnableLambda`; if no, returns a duck-typed shim that still supports `invoke`/`ainvoke`/`batch`. This keeps the compressor usable outside LangChain.
+
+- **Factory methods for workload auto-tuning:** `for_rag()` / `for_summarization()` / `for_dialogue()` pick appropriate stopword sets per domain (dialogue preserves pronouns + discourse markers; RAG uses aggressive news-tuned set; code preserves all identifiers).
+
+- **Core compressor is 160 LOC on top of extractive (310 total).** Python stdlib only (`re`). Zero runtime dependencies. No models to download. No weights to load. SHA-pinned 74-term stopword list in `data/stopwords_v1.json`.
+
+**Where to land it:**
+
+Natural homes:
+
+- `langchain-core`: `langchain_core.compress.HybridCompressor` (lightest, no runtime deps, stdlib-only)
+- Or ship as a separate package `langchain-hstc` that maintainers can reference
+
+Happy to open a PR to whichever location maintainers prefer. The `src/langchain_integration.py` wrapper is already shaped for drop-in.
