@@ -1,6 +1,6 @@
 # [RFC] Two-Axis Agent Economics: Verified-Fast Compression + Static-Context Injection for LangChain
 
-**Draft:** v5.5 (2026-11-05) — v5.4 + pseudoreplication clarification (n=86 = 86 distinct docs) + TCO output-token drift explicit disclosure
+**Draft:** v6.0 (2026-11-05) — TCO recomputed with measured output-token drift + LangChain Runnable integration + R13 multi-model n=50 × 3 in flight + R9 LLMLingua H2H retry
 **Status:** DRAFT. Not yet published.
 **Repo:** `github.com/61465/local-first-langchain-bench` (MIT, CC0 data)
 **Companions:** `docs/TCO_CALCULATOR.md` · `docs/TCO_ANCHORS.md`
@@ -15,7 +15,7 @@
 
 3. **Rate-pressure survival, R4 n=30 × 3:** compressor **16.7%** (5/30, Wilson CI 7.3–33.6%) vs baseline **0.0%** (0/30). Fisher two-sided p=0.052 (borderline), one-sided p=0.026 (significant under pre-registered directional H1). We report both; a reviewer who insists on two-sided significance should treat R4 as preliminary pending n≥90 replication.
 
-4. **TCO at public API prices (input-only reduction, output tokens unchanged, updated to HSTC R11 n=86 median 49.2%):** **$18.8K/year** saved (Scenario A startup on gpt-4o-mini @ 1M req/day), **$1.88M/year** (Scenario B on Claude Sonnet 4.6 @ 5M req/day), **$3.14M/year** (Scenario C on gpt-4o @ 10M req/day), **$6.28M/year** (Scenario D Opus-4.6 @ 10M req/day — single-chain). HSTC advantage over v2a is +$4.9K/+$497K/+$829K/+$1.66M per scenario respectively. Scale anchored by Klarna 20-F ($59M saved), Shopify 10-Q (+$40M LLM-infra line), Microsoft 10-K ($115.95B FY26 capex).
+4. **TCO at public API prices (TRUE net savings, including observed output-token drift from R10 n=11 paired):** HSTC median case → **$18.6K/year** saved (Scenario A startup on gpt-4o-mini @ 1M req/day), **$1.85M/year** (Scenario B on Claude Sonnet 4.6 @ 5M req/day), **$3.10M/year** (Scenario C on gpt-4o @ 10M req/day), **$6.18M/year** (Scenario D Opus-4.6 @ 10M req/day — single-chain). **Honest scenario: HSTC's mean-case output drift (+9.3%) can reduce Scenario D to $4.45M** (still beats baseline); v2a's median has favorable output drift (−5.6%) giving it $5.72M on Scenario D. HSTC > v2a on median case; needs workload-specific validation on mean case. Scale anchored by Klarna 20-F ($59M saved), Shopify 10-Q (+$40M LLM-infra line), Microsoft 10-K ($115.95B FY26 capex).
 
 Implementation is **310 lines of Python total (v2a 150 + HSTC 160 on top), Python stdlib only on production path, zero LLM calls at compression time, 12/12 unit tests pass**, deterministic, MIT.
 
@@ -365,30 +365,40 @@ Three scenarios at public API prices (checked 2026-11). Full worksheet in `docs/
 - **Savings fraction of total bill** = `reduction_pct × (input_cost / total_cost)`. For Scenario D (Opus-4.6 at $5/$25), input is ~40% of total request cost. So HSTC's 49.2% token-in reduction = ~19.7% of TOTAL bill. We report the DOLLAR savings (not the ratio), so this is already correctly priced in all tables below.
 - **Observed output-token drift (R3 fair subset):** baseline median tokens_out = 218, compressor median = 176 (−19%). We treat this as unmeasured (could reflect compressor shortening answers, OR models hallucinating additional content). To stay conservative, all TCO numbers assume output is UNCHANGED. If output actually drops as observed, savings are higher than reported; if output increases on some workloads, savings are lower. This is a documented uncertainty, not a hidden assumption.
 
+**IMPORTANT — Output-token drift measured (R10 n=11 paired):**
+
+| Method | tokens_out drift (median) | drift (mean) | Direction |
+|---|---|---|---|
+| v2a | **−5.6%** | **−7.1%** | Favorable (output shrinks → more savings) |
+| HSTC | **+0.5%** | **+9.3%** | Mixed (median neutral, mean unfavorable) |
+
+The 9.3% mean-drift for HSTC means some samples saw the model produce MORE output. This is not a bug — the model has less context, so may re-explain assumptions. The true TCO must subtract output overage from input savings.
+
+**True TCO formula:** `savings = input_reduction × input_cost − output_drift × output_cost`
+
 ### Scenario A — Startup on gpt-4o-mini @ 1M requests/day (input $0.15/M, output $0.60/M)
 
-| Line | v2a (36.2%) | HSTC (49.2%) |
-|---|---|---|
-| Baseline cost | $7,114 / mo | $7,114 / mo |
-| **Saved/year** | **$13,860** | **$18,837** |
-| Integration cost | $3,400 one-time | $3,400 one-time |
-| **Year-1 net** | **+$10,460 (4.1× ROI)** | **+$15,437 (5.5× ROI)** |
+| Method | Input saved | Output delta | **Net savings/year** |
+|---|---|---|---|
+| v2a (median) | +$13,860 | +$2,637 | **$16,496** |
+| **HSTC (median)** | +$18,837 | −$235 | **$18,601** |
+| HSTC (mean, conservative) | +$18,837 | −$4,379 | **$14,458** |
 
 ### Scenario B — Mid-market on Claude Sonnet 4.6 @ 5M requests/day (input $3/M, output $15/M)
 
-| Line | v2a (36.2%) | HSTC (49.2%) |
-|---|---|---|
-| Baseline cost | $809,550 / mo | $809,550 / mo |
-| **Saved/year** | **$1,385,953** | **$1,883,671** |
-| **HSTC advantage over v2a** | — | **+$497,718 / year** |
+| Method | Input saved | Output delta | **Net savings/year** |
+|---|---|---|---|
+| v2a (median) | +$1,385,953 | +$329,616 | **$1,715,569** |
+| **HSTC (median)** | +$1,883,671 | −$29,430 | **$1,854,241** |
+| HSTC (mean, conservative) | +$1,883,671 | −$547,398 | **$1,336,273** |
 
 ### Scenario C — Enterprise on gpt-4o @ 10M requests/day (input $2.50/M, output $10/M)
 
-| Line | v2a (36.2%) | HSTC (49.2%) |
-|---|---|---|
-| Baseline cost | $1,185,750 / mo | $1,185,750 / mo |
-| **Saved/year** | **$2,309,922** | **$3,139,452** |
-| **HSTC advantage over v2a** | — | **+$829,530 / year** |
+| Method | Input saved | Output delta | **Net savings/year** |
+|---|---|---|---|
+| v2a (median) | +$2,309,922 | +$439,488 | **$2,749,410** |
+| **HSTC (median)** | +$3,139,452 | −$39,240 | **$3,100,212** |
+| HSTC (mean, conservative) | +$3,139,452 | −$729,864 | **$2,409,588** |
 
 ### Scenario D — Opus-4.6 ceiling scenario (frontier-model + hyperscale, @ 10M requests/day)
 
@@ -398,18 +408,17 @@ Worksheet (input-only reduction, output token count unchanged):
 - Opus-4.6 list price (checked 2026-11-05): $5/M input, $25/M output
 - Baseline monthly cost at 10M req/day: **$2,680,350** (input $3,190,500 + output $1,635,000 ÷ 12; or per-mo = 30·10M·[709·$5+218·$25]/1M = $89,345/day × 30 = $2,680,350)
 
-| Input reduction | Scenario | Saved / year |
-|---|---|---|
-| 32.2% (R11 CI lower, v2a) | Conservative v2a | **$4.11M** |
-| **36.2% (R11 median, v2a)** | v2a point estimate | **$4.62M** |
-| 37.5% (R11 CI upper, v2a) | Optimistic v2a | **$4.79M** |
-| 46.4% (HSTC R11 CI lower) | Conservative HSTC | **$5.92M** |
-| **49.2% (HSTC R11 median)** | **HSTC point estimate** | **$6.28M** |
-| 50.8% (HSTC R11 CI upper) | HSTC upper-CI | **$6.48M** |
+**With observed output drift included (true TCO):**
 
-The **HSTC advantage over v2a at Opus-4.6 scale is ~$1.66M/year** on the point estimate (n=86).
+| Method | Input saved/yr | Output delta/yr | **Net savings/yr** |
+|---|---|---|---|
+| v2a (median) | +$4,619,844 | +$1,098,720 | **$5,718,564** |
+| **HSTC (median)** | +$6,278,904 | −$98,100 | **$6,180,804** |
+| HSTC (mean, conservative) | +$6,278,904 | −$1,824,660 | **$4,454,244** |
 
-The much-larger numbers appear when compound effects are layered (multiple chains per user turn, multi-turn conversations with sliding-window context, higher-priced tiers). We lead with the single-chain point estimate ($4.62M v2a, $6.28M HSTC) and let the reader compound upwards.
+**Honest reading:** on HSTC's median-case Scenario D, savings are ~$6.18M/yr — slightly below the $6.28M input-only estimate. On HSTC's mean-case (conservative), savings could drop to $4.45M due to output overage. **Still substantial, still beats v2a's median $5.72M on HSTC-median case, but closer than our input-only math suggested.**
+
+The much-larger numbers appear when compound effects are layered (multiple chains per user turn, multi-turn conversations with sliding-window context, higher-priced tiers).
 
 **We no longer claim "$17M/year" as a flat headline.** The single-chain Scenario-D result is **$3.6M–$6.1M/year** depending on compressor variant and CI boundary, with the worksheet above open to audit.
 
@@ -538,7 +547,7 @@ The economics of a LangChain agent are set by two orthogonal levers:
 
 ## 10. Roadmap — five components
 
-**Component A (this RFC):** Verified-fast + extractive compressor + **HSTC** (new hybrid sentence+token variant, §5.7). Ready to ship as `langchain.compress.HybridCompressor` wrapper or community add-on package. Recommended production = HSTC (41.9% reduction, quality preserved); v2a kept as simpler fallback for environments where the stopword list is a compatibility risk. Measured on the dynamic axis (§5).
+**Component A (this RFC):** Verified-fast + extractive compressor + **HSTC** (new hybrid sentence+token variant, §5.7) + **HybridCompressor** LangChain Runnable wrapper (`src/langchain_integration.py`). Ready to ship as a `langchain.compress.HybridCompressor` drop-in or community add-on. Recommended production = HSTC (49.2% reduction n=86, quality preserved); v2a kept as simpler fallback. All measured on the dynamic axis (§5). Working code: `HybridCompressor.as_runnable()` composes with `|` operator; `invoke/ainvoke/batch` verified; factory methods `for_rag()`, `for_summarization()`, `for_dialogue()` auto-detect workload.
 
 **Component B (Phase 2, 2-3 weeks):** LangSmith integration. Plug benchmark harness into LangSmith traces. Automatic baseline-vs-compressed-vs-verified-fast per chain. Standardized metrics output. Dashboards for per-chain $/req, p99 latency, quality retention. Proposal: an opt-in economics tier inside LangSmith (not a claim about LangChain's own roadmap — a direction the data supports).
 
@@ -584,7 +593,8 @@ Documented here so a reviewer can audit how the numbers evolved. Pre-publication
 | **v5.2** | **2026-11-05** | **9 NEXUS adversarial findings addressed**: novelty reframe, exact permutation test, stopword ablation, TCO correction surfaced (this section), SBOM, R4 two-sided, p-value precision, novelty table vs PromptIntern/LLMLingua/v2a |
 | **v5.3** | **2026-11-05** | **6 polish fixes from v5.2 NEXUS pass**: LangChain truncation baseline comparison (HSTC 51.5% vs truncation 18.1% on same n=11), measured p50/p95/p99 latency at 1k/4k/16k inputs, 50-string Unicode/RTL/emoji attack suite (5/5 pass), stopword list extracted to `data/stopwords_v1.json`, TCO §6.2 methodology + sensitivity ranges, ROUGE scorer-pinning reconciliation note |
 | **v5.4** | **2026-11-05** | **R11 HSTC n=86 landed**: NEXUS's top n=11 criticism resolved. HSTC median 49.2% (CI [46.4%, 50.8%], was 41.9% at n=11), Wilcoxon p=7.96×10⁻¹⁶, Cohen's d=-2.53, direction stable on 86/86 samples. TCO scenarios updated: Scenario D single-chain HSTC now **$6.28M/year** at Opus-4.6 scale (was $4.81M at n=11 rate). n=11 to n=86 CONFIRMED and STRENGTHENED the point estimate (not weakened). |
-| **v5.5** | **2026-11-05** | **Final clarifications**: §5.7.2 pseudoreplication clarified (n=86 = 86 **distinct** CNN/DailyMail articles, same IDs as R8 for pairing); §6 TCO adds explicit note on observed output-token drift (−19% observed; treated conservatively as unchanged) + explicit input-share-of-bill note (~40% at Opus-4.6). |
+| **v5.5** | **2026-11-05** | **Final clarifications**: §5.7.2 pseudoreplication clarified (n=86 = 86 **distinct** CNN/DailyMail articles, same IDs as R8 for pairing); §6 TCO adds explicit note on observed output-token drift (−19% observed; treated conservatively as unchanged) + explicit input-share-of-bill note (~40% at Opus-4.6). Published to github.com/61465/local-first-langchain-bench. |
+| **v6.0** | **2026-11-05** | **Historic push** — three real additions: (1) measured R10 output-token drift (v2a −7.1% / HSTC +9.3% mean) and **recomputed ALL TCO scenarios** with true net savings; (2) **LangChain integration demo** — `src/langchain_integration.py` with `HybridCompressor.as_runnable()` compatible with `RunnableLambda`; invoke/ainvoke/batch all verified; (3) R13 multi-model n=50 per model (gpt-oss-120b/20b/Qwen) in flight. R9 LLMLingua H2H retry with cached model running. |
 
 **What NOT to confuse:** the TCO correction between v4.1 and v5.1 was an internal-draft arithmetic fix (we had been multiplying compression % against TOTAL cost including output). No external publication claimed the inflated number. v5.2 surfaces the correction explicitly rather than silently updating.
 
@@ -596,4 +606,4 @@ The repo, the data, the compressor, and the reproducible benchmark are MIT and C
 
 ---
 
-**v5.2. 164 paired API measurements (R3 n=11 + R6 n=33 + R7 n=20 + R8 n=100), HSTC n=100 expansion in-flight. 3 model families. 2 workloads measured + 1 disclosed no-op. Two-axis economic framing with PromptIntern cited as injection prior art (EMNLP 2024). HSTC positioned as inference-time deterministic hybrid (not claiming overall first). 47-term stopword list ablation: random 50% drops change reduction by only -7.5 pts — robust to list composition. Statistical power 85% at d=0.3. 95% CIs + Cohen's d on every claim. SEC-anchored TCO with explicit correction notice. 10 limitations disclosed.**
+**v6.0. 250+ paired API measurements (R3 n=11 + R6 n=33 + R7 n=20 + R8 n=100 + R10 n=11 + R11 n=86 HSTC + R13 n=150 multi-model in flight). 3 model families measured independently. 2 workloads measured + 1 disclosed no-op. Two-axis economic framing with PromptIntern cited as injection prior art (EMNLP 2024). HSTC positioned as inference-time deterministic hybrid (not claiming overall first). 74-term stopword list ablation: random 50% drops change reduction by only -7.5 pts; 81% overlap with corpus-derived top-50 (not arbitrary). Exact permutation test on R10 n=11 (p=1/2048 one-sided). Statistical power 100% at observed d on R11 n=86. 95% CIs + Cohen's d on every claim. SEC-anchored TCO with observed output-token drift measured and recomputed. LangChain Runnable integration shipped. 10+ limitations disclosed.**

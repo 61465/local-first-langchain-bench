@@ -1,0 +1,91 @@
+{
+  "formula_note": "savings = input_reduction \u00d7 input_cost \u2212 output_drift \u00d7 output_cost",
+  "input_reduction_source": "R11 n=86",
+  "output_drift_source": "R10 n=11 paired (median)",
+  "scenarios": [
+    {
+      "scenario": "A gpt-4o-mini",
+      "input_price_per_m": 0.15,
+      "output_price_per_m": 0.6,
+      "req_per_day": 1000000,
+      "v2a": {
+        "savings_yr": 16496.460000000003,
+        "input_saved": 13859.532000000003,
+        "output_delta": 2636.928
+      },
+      "hstc_median": {
+        "savings_yr": 18601.272000000004,
+        "input_saved": 18836.712,
+        "output_delta": -235.44
+      },
+      "hstc_mean_conservative": {
+        "savings_yr": 14457.528000000002,
+        "input_saved": 18836.712,
+        "output_delta": -4379.184000000001
+      }
+    },
+    {
+      "scenario": "B Sonnet 4.6",
+      "input_price_per_m": 3.0,
+      "output_price_per_m": 15.0,
+      "req_per_day": 5000000,
+      "v2a": {
+        "savings_yr": 1715569.2000000002,
+        "input_saved": 1385953.2000000002,
+        "output_delta": 329615.99999999994
+      },
+      "hstc_median": {
+        "savings_yr": 1854241.2000000002,
+        "input_saved": 1883671.2000000002,
+        "output_delta": -29430.0
+      },
+      "hstc_mean_conservative": {
+        "savings_yr": 1336273.2000000002,
+        "input_saved": 1883671.2000000002,
+        "output_delta": -547398.0000000001
+      }
+    },
+    {
+      "scenario": "C gpt-4o",
+      "input_price_per_m": 2.5,
+      "output_price_per_m": 10.0,
+      "req_per_day": 10000000,
+      "v2a": {
+        "savings_yr": 2749410.0000000005,
+        "input_saved": 2309922.0000000005,
+        "output_delta": 439487.9999999999
+      },
+      "hstc_median": {
+        "savings_yr": 3100212.0000000005,
+        "input_saved": 3139452.0000000005,
+        "output_delta": -39240.0
+      },
+      "hstc_mean_conservative": {
+        "savings_yr": 2409588.0000000005,
+        "input_saved": 3139452.0000000005,
+        "output_delta": -729864.0000000001
+      }
+    },
+    {
+      "scenario": "D Opus 4.6",
+      "input_price_per_m": 5.0,
+      "output_price_per_m": 25.0,
+      "req_per_day": 10000000,
+      "v2a": {
+        "savings_yr": 5718564.000000001,
+        "input_saved": 4619844.000000001,
+        "output_delta": 1098719.9999999998
+      },
+      "hstc_median": {
+        "savings_yr": 6180804.000000001,
+        "input_saved": 6278904.000000001,
+        "output_delta": -98100.0
+      },
+      "hstc_mean_conservative": {
+        "savings_yr": 4454244.0,
+        "input_saved": 6278904.000000001,
+        "output_delta": -1824660.0000000005
+      }
+    }
+  ]
+}
